@@ -20,7 +20,7 @@ class SplashPage extends StatelessWidget {
       backgroundColor: Colors.cyan,
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,//
           children: [
             // Icon(
             //   Icons.alarm,
