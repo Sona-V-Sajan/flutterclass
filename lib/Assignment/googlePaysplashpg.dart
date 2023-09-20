@@ -15,7 +15,7 @@ class Splashpage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center, // Center the children horizontally
-        children: [
+        children: [//sizesboxvech cheyam,align align height
           Expanded(
             flex: 18, // Adjust the flex value to control the spacing between image and text
             child: Center(
