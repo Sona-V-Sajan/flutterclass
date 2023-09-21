@@ -60,7 +60,7 @@ class LoginPage extends StatelessWidget{
             ),
             ElevatedButton(onPressed: (){
               if(username==uname_controller.text && password==pass_controller.text){
-    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Home()));
+    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Homepage()));
     }else{
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Invalid username/password or the fields are empty"),
                 backgroundColor: Colors.redAccent,));
