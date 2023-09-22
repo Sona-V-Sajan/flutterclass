@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project2/statefulregistration.dart';
-import 'package:project2/home.dart';
 import 'homepage.dart';
 
 class Login_stateful extends StatefulWidget {
@@ -11,6 +10,8 @@ class _Login_statefulState extends State<Login_stateful> {
   String username = "admin@gmail.com";
   String pass = 'abc123';
   final key1 = GlobalKey<FormState>();
+  bool passwordhidden=true;
+
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +42,7 @@ class _Login_statefulState extends State<Login_stateful> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextFormField(
+
                   validator: (password){
                     if(password!.isEmpty || password != pass){
                       return 'Password must not be empty/ password length must be > 6';
