@@ -21,7 +21,7 @@ class _Login_statefulState extends State<Login_stateful> {
           key: key1,
           child: Column(
             children: [
-              Image.asset("assets/icons/tree.png",height: 200,width: 150,),
+              Image.asset("assets/icons/icon.png",height: 200,width: 150,),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextFormField(
@@ -42,6 +42,8 @@ class _Login_statefulState extends State<Login_stateful> {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextFormField(
+                  obscuringCharacter: ".",
+                  obscureText:passwordhidden,
 
                   validator: (password){
                     if(password!.isEmpty || password != pass){
@@ -50,9 +52,21 @@ class _Login_statefulState extends State<Login_stateful> {
                       return null;
                     }
                   },
-                  decoration: const InputDecoration(
+                  decoration:  InputDecoration(
                       border: OutlineInputBorder(),
-                      hintText: 'Password'),
+                      hintText: 'Password',
+                      suffixIcon: IconButton(onPressed: (){
+                        setState(() {
+                          if(passwordhidden==true){
+                            passwordhidden=false;
+                          }
+                          else{
+                            passwordhidden=true;
+                          }
+                        });
+                      }, icon:Icon(passwordhidden==true
+                          ?Icons.visibility_off_sharp
+                          :Icons.visibility) )),
                 ),
               ),
               ElevatedButton(onPressed: () {

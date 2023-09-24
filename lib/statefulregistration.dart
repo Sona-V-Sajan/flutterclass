@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:project2/statefullogin.dart';
 
-void main(){
-  runApp(MaterialApp(home: Reg_stateful(),));
-}
+// void main(){
+//   runApp(MaterialApp(home: Reg_stateful(),));
+// }
 class Reg_stateful extends StatefulWidget {
   @override
   State<Reg_stateful> createState() => _Reg_statefulState();
@@ -113,12 +113,15 @@ class _Reg_statefulState extends State<Reg_stateful> {
                       border: OutlineInputBorder(),
                       hintText: 'Password',
                     suffixIcon: IconButton(onPressed: (){
-                      if(cpasswordhidden==true){
-                        cpasswordhidden=false;
-                      }
-                      else{
-                        cpasswordhidden=true;
-                      }
+                      setState(() {
+
+                        if(cpasswordhidden==true){
+                          cpasswordhidden=false;
+                        }
+                        else{
+                          cpasswordhidden=true;
+                        }
+                      });
                     }, icon: Icon(cpasswordhidden==true
                     ?Icons.visibility_off_sharp
                    : Icons.visibility))
