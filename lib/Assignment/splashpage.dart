@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:project2/Assignment/loginpage.dart';
 import 'package:project2/Assignment/signup.dart';
 void main(){
-  runApp(MaterialApp(home: HomePage(),));
+  runApp(MaterialApp(home: SplashPage()));
 }
-class HomePage extends StatelessWidget {
+class  SplashPage extends StatelessWidget {
 
   final key1 = GlobalKey<FormState>();
   @override
