@@ -43,14 +43,14 @@ class FiCard extends StatelessWidget {
                 top:200,
                 left: 20,
                 child:Text("Sona V Sajan",style: GoogleFonts.aBeeZee(
-                  fontSize: 20,color: Colors.grey
+                  fontSize: 20,color: Colors.white24
                 ),)),
              Positioned(
                 top:190,
                 right: 28,
                  child:Text("VISA",style: GoogleFonts.robotoFlex(
                      fontWeight:FontWeight.bold,
-                     fontSize: 20,color: Colors.grey
+                     fontSize: 20,color: Colors.white24
                  ),)
 
 
@@ -58,9 +58,9 @@ class FiCard extends StatelessWidget {
             Positioned(
                 top:10,
                 right: 20,
-                child:Text("FI",style: GoogleFonts.fahkwang(
+                child:Text("FI",style: GoogleFonts.cardo(
                     fontWeight:FontWeight.bold,
-                    fontSize: 20,color: Colors.grey
+                    fontSize: 40,color: Colors.white24
                 ),)
 
 
