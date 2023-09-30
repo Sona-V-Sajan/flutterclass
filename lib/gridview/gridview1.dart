@@ -10,11 +10,11 @@ class GridView1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("GridView1"),),
       body: GridView(
-        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 150
-        ),
+        // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+        //   maxCrossAxisExtent: 150
+        // ),
         //this is show how items will placed in cross axis
-        // gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       children: List.generate(15, (index) => Card(
         color: Colors.primaries[index%Colors.primaries.length],
         child: Icon(Icons.adb),
