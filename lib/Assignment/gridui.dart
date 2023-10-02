@@ -43,8 +43,8 @@ class GridView1 extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    left: 30,
-                    bottom: 25,
+                    left: 10,
+                    bottom: 10,
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Icon(
@@ -55,10 +55,9 @@ class GridView1 extends StatelessWidget {
                     ),
                   ),
                   const Positioned(
-                    left: 0,
+                    left: 35,
                     right: 0,
-                    top: 15,
-                    bottom: 15,
+                    bottom: 0,
                     child: Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Column(
@@ -66,13 +65,13 @@ class GridView1 extends StatelessWidget {
                         children: [
                           Text(
                             "Heart",
-                            style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),
+                            style: TextStyle(fontSize: 11 ,fontWeight: FontWeight.bold),
                           ),
                           Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Text(
                               "Shaker",
-                              style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 15 ,fontWeight: FontWeight.bold),
                             ),
                           ),
                         ],
