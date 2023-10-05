@@ -9,8 +9,11 @@ class Navdrawer1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("AppBar"),
+        backgroundColor: Colors.white,
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        backgroundColor: Colors.black,
+      ),
       body: Stack(
         children: [
           Container(),

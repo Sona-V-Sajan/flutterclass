@@ -8,7 +8,7 @@ class  DrawerExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("AppBar"),backgroundColor: Colors.white,),
+      appBar: AppBar(title: Text("AppBar"),),
       drawer: Drawer(
         child: Container(
           decoration: BoxDecoration(
