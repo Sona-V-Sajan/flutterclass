@@ -13,7 +13,7 @@ class  DrawerExample extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              begin: Alignment.bottomRight,
+                begin: Alignment.bottomRight,
                 end: Alignment.topRight,
                 colors: [
                   Colors.red,
@@ -27,20 +27,20 @@ class  DrawerExample extends StatelessWidget {
                 leading: CircleAvatar(
                   backgroundImage: AssetImage("assets/img/sundar1.png"),
 
-                    ),
+                ),
                 title: Text("Sundar Pachai"),
               ),
-                SizedBox(
-                  height: 50,
-                  width: 40,
-                ),
-                ListTile(
-                  leading: Icon(Icons.dashboard),
-                  title: Text("Dashboard"),
-                  onTap: (){
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Navdrawer1()));
-                  },
-                ),
+              SizedBox(
+                height: 50,
+                width: 40,
+              ),
+              ListTile(
+                leading: Icon(Icons.dashboard),
+                title: Text("Dashboard"),
+                onTap: (){
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Navdrawer1()));
+                },
+              ),
               ListTile(
                 leading: Icon(Icons.leak_add_sharp),
                 title: Text("Leads"),
@@ -74,15 +74,15 @@ class  DrawerExample extends StatelessWidget {
                 width: 100,
               ),
               ElevatedButton(
-                  onPressed: (){},
-                  child: Text("Log Out"),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.redAccent[200],
-                shadowColor: Colors.redAccent[200],
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)
-                )
-              ),)
+                onPressed: (){},
+                child: Text("Log Out"),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.redAccent[200],
+                    shadowColor: Colors.redAccent[200],
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)
+                    )
+                ),)
 
             ],
           ),
