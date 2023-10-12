@@ -17,7 +17,7 @@ class GridView1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(
-      title: Text("Gridview"),),
+      title: const Text("Gridview"),),
       body: GridView.count(
         crossAxisCount: 2,
         children: List.generate(5, (index) => Stack(
@@ -28,7 +28,7 @@ class GridView1 extends StatelessWidget {
                 width: 400,
                 height: 300,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  borderRadius: const BorderRadius.all(Radius.circular(8.0)),
                   image: DecorationImage
                     (fit: BoxFit.fill,
                     image:  AssetImage(
@@ -43,7 +43,7 @@ class GridView1 extends StatelessWidget {
               left: 40,
               child: Text(
                 text[index],
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white, // Text color
                   fontSize: 25, // Text size
                   fontWeight: FontWeight.bold, // Text weight

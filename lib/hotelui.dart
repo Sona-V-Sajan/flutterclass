@@ -19,7 +19,7 @@ class HotelUi extends StatelessWidget {
               fit: BoxFit.fill,
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 240,
             left: 30,
             child: Text(
@@ -31,7 +31,7 @@ class HotelUi extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
            top: 270,
             left: 30,
             child: Text("Kochi, Kerala",
@@ -48,13 +48,13 @@ class HotelUi extends StatelessWidget {
             child: Container(
               width:120,
               height: 30,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 borderRadius:BorderRadius.all(Radius.circular(20)),
                 color: Colors.white38,
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
               left:35,
               top: 300,
               child: Center(
@@ -62,13 +62,13 @@ class HotelUi extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: Colors.white)
                   ,),
               )),
-          Positioned(
+          const Positioned(
             top: 300,
               right: 30,
               child: Icon(Icons.favorite_border,color: Colors.white,)),
 
 
-          Positioned(
+          const Positioned(
             left: 30,
             top: 360,
             child: Row(
@@ -81,17 +81,17 @@ class HotelUi extends StatelessWidget {
               ],
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 370,
             right: 20,
             child: Text("\$200", style: TextStyle(color: Colors.purple,
                 fontWeight: FontWeight.bold,fontSize: 20)),
           ),
-          Positioned(
+          const Positioned(
             top: 385,
               left: 30,
               child: Icon(Icons.location_on,color: Colors.grey,)),
-          Positioned(
+          const Positioned(
             top: 390,
               left: 50,
               child: Text("8 km to LuluMall",
@@ -100,7 +100,7 @@ class HotelUi extends StatelessWidget {
                 fontSize: 15
               ))),
 
-          Positioned(
+          const Positioned(
               top: 390,
               right: 10,
               child: Text("/per night",style: TextStyle(color: Colors.grey,fontSize: 15),)),
@@ -110,7 +110,7 @@ class HotelUi extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
               },
-              child: Text(' Book Now',style: TextStyle(fontWeight:
+              child: const Text(' Book Now',style: TextStyle(fontWeight:
               FontWeight.bold),),
               style: TextButton.styleFrom(
                backgroundColor: Colors.purple,
@@ -122,12 +122,12 @@ class HotelUi extends StatelessWidget {
             ),
           ),
 
-          Positioned(
+          const Positioned(
             bottom:350,
               left: 20,
               child: Text("Ramada Plaza Palm Grove",
                 style: TextStyle(fontWeight: FontWeight.normal,fontSize: 20)),),
-          Positioned(
+          const Positioned(
             bottom: 80,
             left: 20,
             right: 20,
@@ -149,31 +149,31 @@ class HotelUi extends StatelessWidget {
                 ),
           ),
 
-           Positioned(
+           const Positioned(
              bottom: 30,
              left: 50,
              child:
                  Icon(Icons.search,color: Colors.purple,),
              ),
 
-          Positioned(
+          const Positioned(
             bottom: 15,
               left: 50,
               child: Text("Search")),
-          Positioned(
+          const Positioned(
             bottom: 30,
               left: 200,
               child: Icon(Icons.favorite,color: Colors.grey,)),
-          Positioned(
+          const Positioned(
               bottom: 15,
               left: 200,
               child: Text("favorite")),
 
-          Positioned(
+          const Positioned(
             bottom: 30,
               right: 30,
               child: Icon(Icons.settings,color: Colors.grey,)),
-          Positioned(
+          const Positioned(
             bottom: 15,
               right: 30,
 

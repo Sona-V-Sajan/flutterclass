@@ -8,9 +8,9 @@ class Gridview3 extends StatelessWidget {
     return Scaffold(
       body: GridView.extent(maxCrossAxisExtent: 70,
       children:[
-        FaIcon(FontAwesomeIcons.faceFlushed,size: 20,),
-        SizedBox(width: 5,),
-        Expanded(child: Text("data",
+        const FaIcon(FontAwesomeIcons.faceFlushed,size: 20,),
+        const SizedBox(width: 5,),
+        const Expanded(child: Text("data",
         style: TextStyle(
             fontSize: 20,),
 

@@ -28,7 +28,7 @@ class SplashPage extends StatelessWidget {
             //   color: Colors.white,
             // ),
             // Image(image: AssetImage(("assets/icons/img.png")),width: 100,height: 100,),
-            Image(
+            const Image(
               image: NetworkImage(
                   "https://cdn0.iconfinder.com/data/icons/leto-survey-rating/64/__laptop_online_survey_checkmark_select-512.png"),
               width: 100,

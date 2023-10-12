@@ -16,8 +16,8 @@ class  SplashPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Center(child: Text("Hello There!" ,style:TextStyle(fontSize: 50,fontWeight: FontWeight.bold))),
-            Text("Automatic identity verification which enable you to verify your identity",style: TextStyle(fontSize: 15,color: Colors.grey)),
+            const Center(child: Text("Hello There!" ,style:TextStyle(fontSize: 50,fontWeight: FontWeight.bold))),
+            const Text("Automatic identity verification which enable you to verify your identity",style: TextStyle(fontSize: 15,color: Colors.grey)),
             Padding(
               padding: const EdgeInsets.all(40.0),
               child: Image.asset("assets/img/img1.png",width: 160,height: 200,),
@@ -32,20 +32,20 @@ class  SplashPage extends StatelessWidget {
                     Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginPage()));
                   }else{
                     ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Inavlid datas')));
+                        const SnackBar(content: Text('Inavlid data')));
                   }
 
 
                 },
                 color: Colors.green,
                 shape: RoundedRectangleBorder(
-                    side:BorderSide(
+                    side:const BorderSide(
                       color: Colors.green,
                     ) ,
                     borderRadius: BorderRadius.circular(40)
                 ),
 
-                child: Text("Login",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: Colors.white70),),
+                child: const Text("Login",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: Colors.white70),),
               ),
             ),
 
@@ -59,12 +59,12 @@ class  SplashPage extends StatelessWidget {
                 },
                 color: Colors.green,
                 shape: RoundedRectangleBorder(
-                    side:BorderSide(
+                    side:const BorderSide(
                       color: Colors.green,
                     ) ,
                     borderRadius: BorderRadius.circular(40)
                 ),
-                child: Text("Sign Up",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: Colors.white70),),
+                child: const Text("Sign Up",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: Colors.white70),),
               ),
             ),
 

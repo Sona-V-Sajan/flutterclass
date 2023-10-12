@@ -9,7 +9,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String username = "admin@gmail.com";
-  String pass = 'abc123';
+  String pass = 'abc3';
   final key1=GlobalKey<FormState>();
   bool passwordhidden=true;
   @override
@@ -19,16 +19,16 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Center(child:
+            const Center(child:
             Text("Login",style: TextStyle(
                 fontSize: 50,fontWeight: FontWeight.bold
             ))),
-            Text("Welcome back! Login with your credentials",
+            const Text("Welcome back! Login with your credentials",
                 style: TextStyle(fontSize: 15,color: Colors.grey)),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   border: OutlineInputBorder(),
                   hintText: "Email id",
                   prefixIcon: Icon(Icons.email),
@@ -50,8 +50,8 @@ class _LoginPageState extends State<LoginPage> {
                   }
                 },
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: "Password", prefixIcon: Icon(Icons.visibility_off_sharp),
+                  border: const OutlineInputBorder(),
+                  hintText: "Password", prefixIcon: const Icon(Icons.visibility_off_sharp),
                   suffixIcon: IconButton(onPressed: (){
                     setState(() {
                       if(passwordhidden==true){
@@ -77,12 +77,12 @@ class _LoginPageState extends State<LoginPage> {
                 },
                 color: Colors.green,
                 shape: RoundedRectangleBorder(
-                    side:BorderSide(
+                    side:const BorderSide(
                       color: Colors.green,
                     ) ,
                     borderRadius: BorderRadius.circular(40)
                 ),
-                child: Text("Login",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: Colors.white70),),
+                child: const Text("Login",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 20,color: Colors.white70),),
               ),
             ),
 
@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
               child: TextButton(onPressed: (){
                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => SignUp()));
 
-              }, child: Text("Do you have an acount? Signup")),
+              }, child: const Text("Do you have an acount? Signup")),
             ),
 
           ],

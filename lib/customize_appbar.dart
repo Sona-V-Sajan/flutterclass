@@ -18,24 +18,24 @@ class CustomizeAppbar extends StatelessWidget {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Whatsapp"),
+          title: const Text("Whatsapp"),
           actions: [
-            Icon(Icons.camera_alt_outlined),
-            SizedBox(
+            const Icon(Icons.camera_alt_outlined),
+            const SizedBox(
               width: 15,
             ),
-            Icon(Icons.search_off),
+            const Icon(Icons.search_off),
             PopupMenuButton(itemBuilder: (context) {
               return [
-                PopupMenuItem(child: Text("New BroadCast")),
-                PopupMenuItem(child: Text("New Group")),
+                const PopupMenuItem(child: Text("New BroadCast")),
+                const PopupMenuItem(child: Text("New Group")),
               ];
             }),
           ],
           bottom: PreferredSize(
               preferredSize: Size.fromHeight(AppBar().preferredSize.height),
               child: Container(
-                child: TabBar(tabs: [
+                child: const TabBar(tabs: [
                   Tab(
                     icon: Icon(Icons.group),
                   ),

@@ -18,15 +18,15 @@ class _SignUpState extends State<SignUp> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
+          const Center(
               child: Text("Sign Up",
                   style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold))),
-          Text("Create an Account .Its  free",
+          const Text("Create an Account .Its  free",
               style: TextStyle(fontSize: 15, color: Colors.grey)),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 hintText: "Email id",
                 prefixIcon: Icon(Icons.email),
@@ -46,9 +46,9 @@ class _SignUpState extends State<SignUp> {
                 }
               },
               decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                   hintText: "Password",
-                  prefixIcon: Icon(Icons.visibility_off_sharp),
+                  prefixIcon: const Icon(Icons.visibility_off_sharp),
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -77,9 +77,9 @@ class _SignUpState extends State<SignUp> {
                 }
               },
               decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                   hintText: "Password",
-                  prefixIcon: Icon(Icons.visibility_off_sharp),
+                  prefixIcon: const Icon(Icons.visibility_off_sharp),
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -106,11 +106,11 @@ class _SignUpState extends State<SignUp> {
               },
               color: Colors.green,
               shape: RoundedRectangleBorder(
-                  side: BorderSide(
+                  side: const BorderSide(
                     color: Colors.green,
                   ),
                   borderRadius: BorderRadius.circular(40)),
-              child: Text(
+              child: const Text(
                 "Login ",
                 style: TextStyle(
                     fontWeight: FontWeight.w600,

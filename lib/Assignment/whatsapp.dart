@@ -8,19 +8,19 @@ class WhatsappProfile extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
 
-        leading: Drawer(
+        leading: const Drawer(
           child: Icon(Icons.menu, color: Colors.white,),
           backgroundColor: Colors.blue,
         ),
-        title: Center(
+        title: const Center(
           child: Text("Profile"),
         ),
         actions: [
 
           PopupMenuButton(itemBuilder: (context){
             return[
-              PopupMenuItem(child: Text("Data")),
-              PopupMenuItem(child: Text("Settings"))
+              const PopupMenuItem(child: Text("Data")),
+              const PopupMenuItem(child: Text("Settings"))
             ];
           })
         ],
@@ -39,12 +39,12 @@ class WhatsappProfile extends StatelessWidget {
 
             Container(
               height: 200,
-              child: Image(image: AssetImage("assets/img/Mountain.jpg"),
+              child: const Image(image: AssetImage("assets/img/Mountain.jpg"),
                 width: double.infinity,
                 fit: BoxFit.fitWidth,
               ),
             ),
-            Positioned(
+            const Positioned(
               top: 180,
                 left: 30,
                 child: CircleAvatar(
@@ -55,7 +55,7 @@ class WhatsappProfile extends StatelessWidget {
                   backgroundColor: Colors.red,
                 ),
             ),
-             Positioned(
+             const Positioned(
                top: 160,
                left: 300,
                child: CircleAvatar(
@@ -66,7 +66,7 @@ class WhatsappProfile extends StatelessWidget {
              ),
             
             
-            Positioned(
+            const Positioned(
               top: 180,
                 right: 30,
                 child: CircleAvatar(
@@ -74,17 +74,17 @@ class WhatsappProfile extends StatelessWidget {
                   maxRadius: 30,
                   child: Icon(Icons.add),
                 )),
-            Positioned(
+            const Positioned(
               top:300,
                 left: 300,
                 child: Text("David Beckham",style: TextStyle(fontSize: 20,
                     fontWeight: FontWeight.normal),),
             ),
-            Positioned(
+            const Positioned(
               top: 350,
                 left: 310,
                 child: Text("model/super star",style: TextStyle(fontSize: 15,color: Colors.blue),)),
-            Positioned(
+            const Positioned(
               bottom: 10,
                 right: 30,
                 child: CircleAvatar(

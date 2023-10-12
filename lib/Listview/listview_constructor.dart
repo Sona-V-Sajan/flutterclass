@@ -38,7 +38,7 @@ class ListView1 extends StatelessWidget {
                 Text('10.11'),
                 CircleAvatar(
                   minRadius:6,
-                  maxRadius: 12,
+                  maxRadius: 6,
                   backgroundColor: Colors.teal,child: Text("2"),)
               ],
             ),
@@ -56,7 +56,7 @@ class ListView1 extends StatelessWidget {
             //     Text('10.11'),
             //     CircleAvatar(
             //       minRadius:6,
-            //       maxRadius: 12,
+            //       maxRadius: ,
             //       backgroundColor: Colors.teal,child: Text("2"),)
             //   ],
             // ),

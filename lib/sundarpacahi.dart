@@ -8,10 +8,10 @@ class Navdrawer1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AppBar"),
+        title: const Text("AppBar"),
         backgroundColor: Colors.white,
       ),
-      drawer: Drawer(
+      drawer: const Drawer(
         backgroundColor: Colors.black,
       ),
       body: Stack(
@@ -20,18 +20,18 @@ class Navdrawer1 extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 350,
-            child: Image(image: AssetImage("assets/img/sundar3.jpg"),
+            child: const Image(image: AssetImage("assets/img/sundar3.jpg"),
               fit: BoxFit.fill,
             ),
 
           ),
-          Positioned(
+          const Positioned(
             bottom: 150,
               left: 50,
               child: Text("Sundar Pichai",style: TextStyle(
                 fontSize: 18,fontWeight: FontWeight.bold
               ),)),
-           Positioned(
+           const Positioned(
              bottom: 30,
              left: 30,
              right:30,

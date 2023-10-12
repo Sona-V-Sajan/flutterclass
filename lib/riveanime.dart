@@ -8,7 +8,7 @@ class RiveAnime extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: RiveAnimation.asset(
             "assets/animation/5931-11523-interactive-pendulum-spacing.riv"),

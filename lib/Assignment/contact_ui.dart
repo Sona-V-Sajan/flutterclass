@@ -4,7 +4,7 @@ void main(){
 }
 class Contact_ui extends StatelessWidget {
 var title=["John Judah","Bisola Akanbi","Eghosa iku","Andrew Nobeulsi","Annize Dayo","Wakara Zambu","Emaechi Chinedu","Paul Mathew"];
-var  num=[9747040373,8129279497,702505725,956803452,9188572656,987656234,098743221,786543132];
+var  num=[9747040373,89279497,702505725,956803452,9188572656,987656234,098743221,786543132];
 var  icon=[Icons.account_circle,Icons.account_circle,Icons.account_circle,Icons.account_circle,Icons.account_circle,Icons.account_circle,Icons.account_circle,Icons.account_circle];
 var  backgroundColors = [Colors.blue, Colors.pink, Colors.orange, Colors.blue,Colors.green, Colors.red, Colors.yellow, Colors.blue];
 var  arrow=[">",">",">",">",">",">",">",">"];

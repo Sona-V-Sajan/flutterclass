@@ -20,7 +20,7 @@ class RegistrationPage extends StatelessWidget {
                 width: 100,
               ),
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 12.0),
+                padding: EdgeInsets.symmetric(vertical: .0),
                 child: TextField(
                   decoration:InputDecoration(
                       hintText: "Name",

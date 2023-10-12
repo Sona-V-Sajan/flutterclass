@@ -82,7 +82,7 @@ class ProfileDrawer extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    child: Column(
+                    child: const Column(
                       children: [
                         ListTile(
                           leading: Icon(Icons.privacy_tip),

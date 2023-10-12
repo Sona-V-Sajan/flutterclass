@@ -22,11 +22,11 @@ class ListView_Builder extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text("Listview Builder"),
+        title: const Text("Listview Builder"),
       ),
       body: ListView(
         children: [
-          ListTile(
+          const ListTile(
             leading: CircleAvatar(
             child: Icon(Icons.insert_link_outlined),
             backgroundColor: Colors.teal,
@@ -34,19 +34,19 @@ class ListView_Builder extends StatelessWidget {
           title: Text("Create Call Link "),
           subtitle: Text("Share a link"),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 8.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 8.0),
             child: Text("Recent"),
           ),
           ListView.builder(
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemCount: 10,
               itemBuilder: (context,index){
               return ListTile(
-                title: Text("hello"),
+                title: const Text("hello"),
                 subtitle:
-                Row(
+                const Row(
                   children: [
                     Icon(Icons.call_missed_rounded,
                       color: Colors.red,),
@@ -55,7 +55,7 @@ class ListView_Builder extends StatelessWidget {
                   ],
                 ),
                 leading: Image.asset(images[index]),
-                trailing: Icon(Icons.call_missed_rounded,
+                trailing: const Icon(Icons.call_missed_rounded,
                   color: Colors.red,),
 
 

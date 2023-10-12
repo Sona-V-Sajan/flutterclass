@@ -12,7 +12,7 @@ class NaviDrawer extends StatelessWidget {
       ),
       drawer: Drawer(
         child: ListView(
-          children: [
+          children: const [
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(
                 image:DecorationImage(image: AssetImage("assets/img/USA.jpg"))

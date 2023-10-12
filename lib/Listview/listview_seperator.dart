@@ -10,22 +10,22 @@ class ListView_Separated extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Listview.Separator"),
+        title: const Text("Listview.Separator"),
       ),
       body: ListView.separated(
           itemBuilder: (context,index){
-            return Card(
+            return const Card(
               child: FaIcon(FontAwesomeIcons.facebook),
 
             );
           },
           separatorBuilder: (context,index){
             if(index % 4 == 0){
-              return Card(
+              return const Card(
               child: Text("data"),color: Colors.red,);
             }
             else{
-              return SizedBox();
+              return const SizedBox();
             }
 
           },

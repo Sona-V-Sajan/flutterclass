@@ -20,9 +20,9 @@ var img=["assets/img/bananas.png","assets/img/bibimbap.png","assets/img/donut.pn
         child: Column(
           children: [
             Image.asset(img[index],height: 100,),
-            Text("Food1",
+            const Text("Food1",
             style: TextStyle(fontSize: 20),),
-            Text("120\$"
+            const Text("120\$"
             ,style: TextStyle(
                 fontSize: 10
               ),),
