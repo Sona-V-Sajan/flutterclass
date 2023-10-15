@@ -21,7 +21,17 @@ class Custom_Card extends StatelessWidget {
     return Card(
       child: Column(
         children: [
-          Stack(children: [Image(image: image!)]),
+          Stack(children: [Image(image: image!),
+            Positioned(
+              top: 18,
+              right: 18,
+              child: Icon(
+                Icons.favorite,
+                size: 15,
+                color: Colors.red,
+              ),
+            ),
+          ]),
           Text(
             text!,
             style: GoogleFonts.satisfy(
@@ -29,11 +39,7 @@ class Custom_Card extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontStyle: FontStyle.italic),
           ),
-          // Icon(
-          //   icon!,
-          //   size: 15,
-          //   color: Colors.white,
-          // ),
+
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
