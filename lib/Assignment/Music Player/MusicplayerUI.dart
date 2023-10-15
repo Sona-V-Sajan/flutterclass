@@ -8,26 +8,14 @@ void main() {
 }
 
 class MusicPlayer extends StatelessWidget {
-  var gradient =[
-    const LinearGradient(
-                   colors: [Colors.greenAccent, Colors.blueAccent, Colors.blueGrey],
-                    begin: Alignment.topLeft, end: Alignment.bottomRight),
-    const LinearGradient(
-        colors: [Colors.purpleAccent, Colors.purple, Colors.black26],
-        begin: Alignment.topLeft, end: Alignment.bottomRight),
-    const LinearGradient(
-        colors: [Colors.purple, Colors.black, Colors.purple],
-        begin: Alignment.topLeft, end: Alignment.bottomRight),
-    const LinearGradient(
-        colors: [Colors.grey, Colors.redAccent, Colors.black26],
-        begin: Alignment.topLeft, end: Alignment.bottomRight),
-    const LinearGradient(
-        colors: [Colors.greenAccent, Colors.blueAccent, Colors.blueGrey],
-        begin: Alignment.topLeft, end: Alignment.bottomRight),
-    const LinearGradient(
-        colors: [Colors.purpleAccent, Colors.purple, Colors.black26],
-        begin: Alignment.topLeft, end: Alignment.bottomRight),
-  ];
+  var image=["assets/img/music1.png",
+              "assets/img/music2.png",
+              "assets/img/music3.png",
+              "assets/img/music4.png",
+              "assets/img/music5.png",
+              "assets/img/muic6.png"
+
+            ];
   var  text=("Top 50","Pop Music","LOFI REMIXES","M+IKE","CAR MUSIC","TIKTOKSONGS");
   int selectedIndex = 0;
 
@@ -58,76 +46,78 @@ class MusicPlayer extends StatelessWidget {
         inactiveColor: Colors.white,
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const TextField(
-              decoration: InputDecoration(
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                ),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
-                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                ),
-                hintText: "Search...",
-                hintStyle: TextStyle(color: Color(0xFFFE4B8AE)),
-                suffixIcon: Icon(
-                  Icons.search,
-                  color: Color(0xFFFE4B8AE),
-                ),
-              ),
-            ),
-
-            const Padding(
-              padding: EdgeInsets.all(20.0),
-              child: Center(
-                child: Text(
-                  "Playlists",
-                  style: TextStyle(
-                      color: Color(0xFFFE4B8AE),
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
+        child: Container(
+          child: Column(
+            children: [
+              const TextField(
+                decoration: InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  ),
+                  border: OutlineInputBorder(
+                    borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  ),
+                  hintText: "Search...",
+                  hintStyle: TextStyle(color: Color(0xFFFE4B8AE)),
+                  suffixIcon: Icon(
+                    Icons.search,
+                    color: Color(0xFFFE4B8AE),
+                  ),
                 ),
               ),
-            ),
+
+              const Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Center(
+                  child: Text(
+                    "Playlists",
+                    style: TextStyle(
+                        color: Color(0xFFFE4B8AE),
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
 
 
-           GridView.count(crossAxisCount: 2,
-           crossAxisSpacing: 4,
-           mainAxisSpacing: 4,
-           shrinkWrap: true,
-             children: List.generate( 6, (index) {
-               return Padding(
-                 padding: const EdgeInsets.all(20.0),
-                 child: Column(
-                   children: [
-                     Container(
-                       height: 5,
-                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(20),
-                         gradient:  LinearGradient(
-                             colors: [Colors.greenAccent, Colors.blueAccent, Colors.blueGrey],
-                             begin: Alignment.topLeft, end: Alignment.bottomRight),
+             GridView.count(crossAxisCount: 2,
+             crossAxisSpacing: 4,
+             mainAxisSpacing: 4,
+             shrinkWrap: true,
+               children: List.generate( 6, (index) {
+                 return Padding(
+                   padding: const EdgeInsets.all(20.0),
+                   child: Column(
+                     children: [
+                       Container(
+                         height: 150,
+                         width: 150,
+                         decoration: BoxDecoration(
+                           borderRadius: BorderRadius.circular(20),
+                           image: DecorationImage (
+                               image: AssetImage(image[index]),fit: BoxFit.cover,)
+                         ),
+
+                          // Center(child: Text("Top %50"
+                          //  ,style: TextStyle(fontSize: 10,
+                          //      fontWeight: FontWeight.normal,
+                          //      color: Colors.white),)) ,
+
+
                        ),
-                       child: Icon(Icons.line_weight_sharp,color: Colors.white,weight: 15,size: 10,),
-                        // Center(child: Text("Top %50"
-                        //  ,style: TextStyle(fontSize: 10,
-                        //      fontWeight: FontWeight.normal,
-                        //      color: Colors.white),)) ,
-
-
-                     ),
-                   ],
-                 ),
-               );
-             },),
-           )
-          ],
+                     ],
+                   ),
+                 );
+               },),
+             )
+            ],
+          ),
         ),
       ),
     );
