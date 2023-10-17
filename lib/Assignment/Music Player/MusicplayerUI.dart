@@ -49,28 +49,32 @@ class MusicPlayer extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
-              const TextField(
-                decoration: InputDecoration(
-                  enabledBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
-                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  ),
-                  focusedBorder: UnderlineInputBorder(
-                    borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
-                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  ),
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Color(0xFFFE4B8AE)),
-                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                  ),
-                  hintText: "Search...",
-                  hintStyle: TextStyle(color: Color(0xFFFE4B8AE)),
-                  suffixIcon: Icon(
-                    Icons.search,
-                    color: Color(0xFFFE4B8AE),
+              Container(
+                height: 40,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    border: Border.all(
+                      color: Color(0xFFFE4B8AE), // Set the border color here
+                       // Adjust the border width if needed
+                    ),
+
+
+
+                ),
+                child: const TextField(
+                  style:TextStyle(color: Colors.white),
+                  decoration: InputDecoration(
+                  border: InputBorder.none,
+                    hintText: "Search...",
+                    hintStyle: TextStyle(color: Color(0xFFFE4B8AE)),
+                    suffixIcon: Icon(
+                      Icons.search,
+                      color: Color(0xFFFE4B8AE),
+                    ),
+                    ),
                   ),
                 ),
-              ),
 
               const Padding(
                 padding: EdgeInsets.all(20.0),
