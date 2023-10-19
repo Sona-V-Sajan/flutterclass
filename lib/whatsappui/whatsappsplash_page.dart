@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:project2/statefullogin.dart';
 void main(){
   runApp(MaterialApp(home: WhatsappSplash(),));
@@ -26,12 +27,22 @@ class _WhatsappSplashState extends State<WhatsappSplash> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
-            child: CircleAvatar(
-              backgroundColor: Colors.teal,
-                child: Icon(FontAwesomeIcons.whatsapp,color: Colors.white,)),
+          Expanded(
+            flex: 20,
+            child: Center(
+              child: CircleAvatar(
+                backgroundColor: Colors.teal,
+                  child: Icon(FontAwesomeIcons.whatsapp,color: Colors.white,)),
+            ),
           ),
-          Text("From"),
+          Expanded(
+            flex: 1, // Adjust the flex value to control the spacing between image and text
+            child: Align(
+              alignment: Alignment.bottomCenter,
+              child:Text("From"),
+            ),
+          ),
+
           Text("Facebook",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.teal),)
         ],
       ),

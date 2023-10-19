@@ -54,9 +54,11 @@ class ListView2 extends StatelessWidget {
             10,
             (index) => Card(
                   child: ListTile(
+                    selectedTileColor: Colors.deepOrange,
+                    selectedColor: Colors.deepOrange,
                     title: Text(title[index]),
                     subtitle: Text("${subti[index]}"),
-                    leading:Image.asset(images[index]),
+                    leading:Image.asset(images[index],fit: BoxFit.contain,height: 100,width: 50,),
                     trailing: Icon(icons[index]),
                   ),
                 )),

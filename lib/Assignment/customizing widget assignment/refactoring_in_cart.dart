@@ -6,7 +6,7 @@ class Custom_Cart extends StatelessWidget {
   String? description;
   String? pricing;
   IconData? stars;
-  IconData? icons;
+  IconData? favourite;
   String? rating;
 
   Custom_Cart({
@@ -14,7 +14,7 @@ class Custom_Cart extends StatelessWidget {
     required this.description,
     required this.pricing,
     required this.stars,
-    required this.icons,
+    required this.favourite,
     required this.rating,
   });
 
@@ -54,7 +54,7 @@ class Custom_Cart extends StatelessWidget {
                       pricing!,
                       style: TextStyle(color: Colors.blueAccent, fontSize: 10, fontWeight: FontWeight.bold),
                     ),
-                    Icon(Icons.favorite_border, color: Colors.grey),
+                    Icon(favourite!, color: Colors.grey),
                   ],
                 ),
                 Row(
@@ -62,11 +62,11 @@ class Custom_Cart extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star,color: Colors.grey,),
+                        Icon(stars!, color: Colors.yellow),
+                        Icon(stars!, color: Colors.yellow),
+                        Icon(stars!, color: Colors.yellow),
+                        Icon(stars!, color: Colors.yellow),
+                        Icon(stars!,color: Colors.grey,),
                       ],
                     ),
                     Text(
