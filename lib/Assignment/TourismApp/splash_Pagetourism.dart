@@ -1,7 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:project2/Assignment/TourismApp/home_Pagetourism.dart';
+import 'package:project2/Assignment/TourismApp/login_Pagetourism.dart';
 
 void main(){
   runApp(MaterialApp(home: Tourism_Splashpage(),));
@@ -13,7 +12,7 @@ class Tourism_Splashpage extends StatefulWidget {
 
 class _Tourism_SplashpageState extends State<Tourism_Splashpage> {
   void initState(){
-    Timer(Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login_Tourism()));
     });
   }
@@ -21,7 +20,7 @@ class _Tourism_SplashpageState extends State<Tourism_Splashpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:  Colors.grey[300],
-      body: Column(
+      body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(

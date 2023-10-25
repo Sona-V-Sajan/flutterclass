@@ -143,24 +143,24 @@ class MusicPlayer extends StatelessWidget {
                         child: Row(
                           children: [
                             Image.asset("assets/img/taylorswift.jpg", fit: BoxFit.contain),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 50,right:
+                            const Padding(
+                              padding: EdgeInsets.only(left: 50,right:
                               300,bottom:10),
                               child: Column(
                                 children: [
-                                  const Text("Hero",style: TextStyle(
+                                  Text("Hero",style: TextStyle(
                                     color: Color(0xFFFE4B8AE),
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
 
                                   ),),
-                                  const Text("Taylor Swift",style: TextStyle(color: Colors.white,),)
+                                  Text("Taylor Swift",style: TextStyle(color: Colors.white,),)
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 30),
-                              child: const Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
+                            const Padding(
+                              padding: EdgeInsets.only(left: 30),
+                              child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
                             ),
                             const Icon(Icons.download, size: 30, color: Color(0xFFFE4B8AE)),
 
@@ -179,24 +179,24 @@ class MusicPlayer extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset("assets/img/unholy.jpg", fit: BoxFit.contain,height: 40,width: 40,),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 50,right:
+                          const Padding(
+                            padding: EdgeInsets.only(left: 50,right:
                             300,bottom:10),
                             child: Column(
                               children: [
-                                const Text("Unholy",style: TextStyle(
+                                Text("Unholy",style: TextStyle(
                                   color: Color(0xFFFE4B8AE),
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
-                                const Text("Sam Smith",style: TextStyle(color: Colors.white,),)
+                                Text("Sam Smith",style: TextStyle(color: Colors.white,),)
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30),
-                            child: const Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 30),
+                            child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
                           ),
                           const Icon(Icons.download, size: 30, color: Color(0xFFFE4B8AE)),
 
@@ -214,24 +214,24 @@ class MusicPlayer extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset("assets/img/lift me up.jpg", fit: BoxFit.contain,height: 40,width: 40,),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 50,right:
+                          const Padding(
+                            padding: EdgeInsets.only(left: 50,right:
                             300,bottom:10),
                             child: Column(
                               children: [
-                                const Text("Lift Me UP",style: TextStyle(
+                                Text("Lift Me UP",style: TextStyle(
                                   color: Color(0xFFFE4B8AE),
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
-                                const Text("Rihanna",style: TextStyle(color: Colors.white,),)
+                                Text("Rihanna",style: TextStyle(color: Colors.white,),)
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30),
-                            child: const Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 30),
+                            child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
                           ),
                           const Icon(Icons.download, size: 30, color: Color(0xFFFE4B8AE)),
 
@@ -249,24 +249,24 @@ class MusicPlayer extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset("assets/img/depression.jpg", fit: BoxFit.contain,height: 40,width: 40,),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 50,right:
+                          const Padding(
+                            padding: EdgeInsets.only(left: 50,right:
                             300,bottom:10),
                             child: Column(
                               children: [
-                                const Text("Depression",style: TextStyle(
+                                Text("Depression",style: TextStyle(
                                   color: Color(0xFFFE4B8AE),
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
-                                const Text("Dax",style: TextStyle(color: Colors.white,),)
+                                Text("Dax",style: TextStyle(color: Colors.white,),)
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30),
-                            child: const Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 30),
+                            child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
                           ),
                           const Icon(Icons.download, size: 30, color: Color(0xFFFE4B8AE)),
 
@@ -285,24 +285,24 @@ class MusicPlayer extends StatelessWidget {
                       child: Row(
                         children: [
                           Image.asset("assets/img/depression.jpg", fit: BoxFit.contain,height: 40,width: 40,),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 50,right:
+                          const Padding(
+                            padding: EdgeInsets.only(left: 50,right:
                             300,bottom:10),
                             child: Column(
                               children: [
-                                const Text("Depression",style: TextStyle(
+                                Text("Depression",style: TextStyle(
                                   color: Color(0xFFFE4B8AE),
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
-                                const Text("Dax",style: TextStyle(color: Colors.white,),)
+                                Text("Dax",style: TextStyle(color: Colors.white,),)
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30),
-                            child: const Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 30),
+                            child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xFFFE4B8AE)),
                           ),
                           const Icon(Icons.download, size: 30, color: Color(0xFFFE4B8AE)),
 

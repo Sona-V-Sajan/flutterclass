@@ -21,7 +21,8 @@ class Custom_Card extends StatelessWidget {
     return Card(
       child: Column(
         children: [
-          Stack(children: [Image(image: image!),
+          Stack(children: [
+            Image(image: image!),
             Positioned(
               top: 18,
               right: 18,

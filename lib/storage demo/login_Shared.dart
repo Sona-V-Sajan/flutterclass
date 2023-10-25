@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project2/storage/registration_Page.dart';
 import 'package:project2/storage/home_Shared.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 void main(){
@@ -67,7 +68,14 @@ class _Login_SharedState extends State<Login_Shared> {
               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home_Shared()));
 
             }
-          }, child: Text("Login"))
+          }, child: Text("Login")),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(onPressed: (
+                ){
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>RegistrationPage()));
+            }, child: Text("Register")),
+          )
 
         ],
       ),
