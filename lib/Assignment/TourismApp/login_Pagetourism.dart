@@ -41,12 +41,12 @@ class Login_Tourism extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    width: 60,
+                    width: 80,
                   ),
                   Text("Registration " ,style:
                   TextStyle(color: Colors.white,fontSize: 15),),
                   SizedBox(
-                    width: 120,
+                    width: 10,
                   ),
                   Icon(Icons.app_registration,color: Colors.white,)
                 ],
@@ -71,12 +71,12 @@ class Login_Tourism extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    width: 60,
+                    width: 40,
                   ),
                   Text("Login With Facebook " ,style:
                   TextStyle(color: Colors.white,fontSize: 15),),
                   SizedBox(
-                    width: 60,
+                    width: 10,
                   ),
                   Icon(Icons.facebook,color: Colors.white,)
                 ],
@@ -102,12 +102,12 @@ class Login_Tourism extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    width: 60,
+                    width: 40,
                   ),
                   Text("Login With Google " ,style:
                   TextStyle(color: Colors.white,fontSize: 15),),
                   SizedBox(
-                    width: 80,
+                    width: 10,
                   ),
                   Icon(Icons.transfer_within_a_station,color: Colors.white,)
                 ],

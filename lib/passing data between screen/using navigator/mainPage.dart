@@ -39,12 +39,15 @@ class ProductPage extends StatelessWidget {
                                     image: AssetImage(e["image"])))),
                         Text(e["name"]),
                         Text("${e["price"]}\$"),
+
                       ],
                     ),
                   ),
                 ))
             .toList(),
+
       ),
+
 
       //list view
       // body: ListView(
