@@ -13,11 +13,7 @@ class SQL_functions{
 
   //create Table
   static Future<void> createTable(sql.Database db) async {
-    await db.execute("""CREATE TABLE contact(
-       id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-       cname TEXT,
-       cnumber TEXT,
-      )""");
+    await db.execute('CREATE TABLE contact (id INTEGER PRIMARY KEY AUTO INCREMENT NOT NULL, cname TEXT, cnumber TEXT)');
   }
 
   static Future<int> addnewContact(name, number) async{

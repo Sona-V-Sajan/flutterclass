@@ -38,7 +38,8 @@ class _Contact_BookState extends State<Contact_Book> {
                 subtitle: Text(contacts[index] ["cnumber"]),
                 trailing: Wrap(
                   children: [
-                    IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+                    IconButton(
+                        onPressed: () => showSheet(contacts[index]["id"]), icon: Icon(Icons.edit)),
                     IconButton(onPressed: () {}, icon: Icon(Icons.delete))
                   ],
                 ),
@@ -55,6 +56,12 @@ class _Contact_BookState extends State<Contact_Book> {
   final num_controller = TextEditingController();
 
   void showSheet(int? id) {
+    if(id != null){
+      final exisitingcontact=contacts.firstWhere((element) => element["id"] == id );
+      name_controller.text =exisitingcontact["cname"];
+      num_controller.text=exisitingcontact["cnumber"];
+
+    }
     showModalBottomSheet(
         isScrollControlled: true,
         context: context, builder: (context) {
@@ -66,39 +73,49 @@ class _Contact_BookState extends State<Contact_Book> {
             bottom: MediaQuery
                 .of(context)
                 .viewInsets
-                .bottom +
-                120 //this is used to pop up the additional space then other area is scrollable
+                .bottom + 120 //this is used to pop up the additional space then other area is scrollable
         ),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
-            TextField(
-              controller: name_controller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: "Name"
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: name_controller,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: "Name"
+                ),
               ),
             ),
-            TextField(
-              controller: num_controller,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  hintText: "Number"
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                controller: num_controller,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: "Number"
+                ),
               ),
             ),
-            ElevatedButton(onPressed: () {
-              if (id == null) {
-                createContact(
-                    name_controller.text, num_controller.text);
-              }
-              {
-                if (id != null) {
-                  //update contact();
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(onPressed: () {
+                if (id == null) {
+                  createContact(
+                      name_controller.text, num_controller.text);
                 }
-                name_controller.text = ""; //values null
-                num_controller.text = "";
-              }
-            }, child: Text(
-                id == null ? "create contact" : "Update Contact"))
+                {
+                  if (id != null) {
+                    //update contact();
+                  }
+                  name_controller.text = ""; //values null
+                  num_controller.text = "";
+                  Navigator.of(context).pop;
+                }
+              }, child: Text(
+                  id == null ? "create contact" : "Update Contact")),
+            )
           ],
         ),
       );
@@ -108,7 +125,7 @@ class _Contact_BookState extends State<Contact_Book> {
 
   Future <void> createContact(String name, String number) async {
     //collected value add to db
-    await SQL_functions.addnewContact(name, number);//classname.sstatic metthod/tatic variable
+    await SQL_functions.addnewContact(name, number);//classname.static metthod/tatic variable
     readContact_and_rfersh_Ui();
   }
   @override
