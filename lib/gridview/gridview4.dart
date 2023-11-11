@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: GridView5(),));
+  runApp(const MaterialApp(home: GridView5(),));
 }
 class GridView5 extends StatelessWidget {
+  const GridView5({super.key});
+
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.custom(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+      body: GridView.custom(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
       mainAxisSpacing: 10,
       crossAxisSpacing: 10),
           childrenDelegate: SliverChildBuilderDelegate((context, index) => Container(
-            child: Stack(
+            child: const Stack(
               children: [
                 Image(image: AssetImage("assets/img/pic2.jpg" ),height: 200,),
                 Positioned(

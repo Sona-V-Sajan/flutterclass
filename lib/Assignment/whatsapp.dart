@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: WhatsappProfile(),));
+  runApp(const MaterialApp(home: WhatsappProfile(),));
 }
 class WhatsappProfile extends StatelessWidget {
+  const WhatsappProfile({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
 
         leading: const Drawer(
-          child: Icon(Icons.menu, color: Colors.white,),
           backgroundColor: Colors.blue,
+          child: Icon(Icons.menu, color: Colors.white,),
         ),
         title: const Center(
           child: Text("Profile"),
@@ -37,9 +39,9 @@ class WhatsappProfile extends StatelessWidget {
 
             ),
 
-            Container(
+            const SizedBox(
               height: 200,
-              child: const Image(image: AssetImage("assets/img/Mountain.jpg"),
+              child: Image(image: AssetImage("assets/img/Mountain.jpg"),
                 width: double.infinity,
                 fit: BoxFit.fitWidth,
               ),
@@ -50,9 +52,9 @@ class WhatsappProfile extends StatelessWidget {
                 child: CircleAvatar(
                   minRadius: 20,
                   maxRadius: 30,
+                  backgroundColor: Colors.red,
                   child: Icon(Icons.message
                   ),
-                  backgroundColor: Colors.red,
                 ),
             ),
              const Positioned(
@@ -88,8 +90,8 @@ class WhatsappProfile extends StatelessWidget {
               bottom: 10,
                 right: 30,
                 child: CircleAvatar(
-                  child: Icon(Icons.edit),
                   backgroundColor: Colors.grey,
+                  child: Icon(Icons.edit),
                 )),
 
 

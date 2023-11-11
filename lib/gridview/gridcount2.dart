@@ -6,6 +6,8 @@ class GridView2 extends StatelessWidget {
   var text=["food1","food2","food3","food4","food5"];
 var img=["assets/img/bananas.png","assets/img/bibimbap.png","assets/img/donut.png","assets/img/grapes.png","assets/img/hamburger.png"];
 
+  GridView2({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

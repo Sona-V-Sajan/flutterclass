@@ -3,17 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:project2/Assignment/TourismApp/login_Pagetourism.dart';
 
 void main(){
-  runApp(MaterialApp(home: Tourism_Splashpage(),));
+  runApp(const MaterialApp(home: Tourism_Splashpage(),));
 }
 class Tourism_Splashpage extends StatefulWidget {
+  const Tourism_Splashpage({super.key});
+
   @override
   State<Tourism_Splashpage> createState() => _Tourism_SplashpageState();
 }
 
 class _Tourism_SplashpageState extends State<Tourism_Splashpage> {
+  @override
   void initState(){
     Timer(const Duration(seconds: 6), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login_Tourism()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>const Login_Tourism()));
     });
   }
   @override

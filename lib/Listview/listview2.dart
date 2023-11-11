@@ -43,11 +43,13 @@ class ListView2 extends StatelessWidget {
               Icons.account_circle,
               Icons.abc_sharp];
 
+  ListView2({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Listview2"),
+        title: const Text("Listview2"),
       ),
       body: ListView(
         children: List.generate(

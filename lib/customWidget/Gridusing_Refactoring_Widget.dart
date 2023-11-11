@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:project2/customWidget/refactoring_widget.dart';
 void main(){
-  runApp(MaterialApp(home:Grid_wih_Refactoring(),));
+  runApp(const MaterialApp(home:Grid_wih_Refactoring(),));
 }
 
 class Grid_wih_Refactoring extends StatelessWidget {
+  const Grid_wih_Refactoring({super.key});
+
 
   @override
   Widget build(BuildContext context) {

@@ -1,18 +1,20 @@
 
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: RegistrationPage(),));
+  runApp(const MaterialApp(home: RegistrationPage(),));
 }
 class RegistrationPage extends StatelessWidget{
+  const RegistrationPage({super.key});
+
   @override
   Widget build(BuildContext context) {
    return Scaffold(
-     appBar: AppBar(title: Text("Registration Page"),
+     appBar: AppBar(title: const Text("Registration Page"),
      ),
      body: Column(children: [
-       SingleChildScrollView(
+       const SingleChildScrollView(
          child: Padding(
-           padding: const EdgeInsets.symmetric(vertical: 15.0),
+           padding: EdgeInsets.symmetric(vertical: 15.0),
            child: TextField(decoration: InputDecoration(
              hintText:"Name",
              labelText: "Name",
@@ -29,7 +31,7 @@ class RegistrationPage extends StatelessWidget{
              hintText: "Email",
              labelText: "Email",
              helperText: "Must be an 6 character and .com",
-             prefix: Icon(Icons.email),
+             prefix: const Icon(Icons.email),
                border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
            ),
          ),
@@ -41,7 +43,7 @@ class RegistrationPage extends StatelessWidget{
                hintText: "Phone Number",
                labelText: "Phone Number",
                helperText: "Must be an number",
-               prefix: Icon(Icons.numbers),
+               prefix: const Icon(Icons.numbers),
                border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
            ),
          ),
@@ -52,7 +54,7 @@ class RegistrationPage extends StatelessWidget{
              hintText: "PassWord",
              labelText: "PassWord",
              helperText: "Must be an number and special characters",
-             prefix: Icon(Icons.password),
+             prefix: const Icon(Icons.password),
              border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
          ),),
        ),
@@ -62,13 +64,13 @@ class RegistrationPage extends StatelessWidget{
              hintText: "Confirm PassWord",
              labelText: "Confirm PassWord",
              helperText: "Must be an number and special characters",
-             prefix: Icon(Icons.password),
+             prefix: const Icon(Icons.password),
              border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
          ),),
        ),
        Padding(
          padding: const EdgeInsets.all(8.0),
-         child: ElevatedButton(onPressed: (){}, child: Text("Register")),
+         child: ElevatedButton(onPressed: (){}, child: const Text("Register")),
        )
 
      ],),

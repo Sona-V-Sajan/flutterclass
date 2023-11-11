@@ -3,17 +3,20 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:project2/Assignment/framers%20fresh%20zone/homepage.dart';
 void main(){
-  runApp(MaterialApp(home: Farmers_Splash(),));
+  runApp(const MaterialApp(home: Farmers_Splash(),));
 }
 class  Farmers_Splash extends StatefulWidget {
+  const Farmers_Splash({super.key});
+
   @override
   State< Farmers_Splash> createState() =>  Farmers_SplashState();
 }
 
 class Farmers_SplashState extends State< Farmers_Splash> {
+  @override
   void initState(){
-  Timer(Duration(seconds: 6), () {
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage_Farm()));
+  Timer(const Duration(seconds: 6), () {
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>const Homepage_Farm()));
   });
 
   }

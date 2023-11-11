@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:project2/sundarpacahi.dart';
 
 void main(){
-  runApp(MaterialApp(home: DrawerExample(),));
+  runApp(const MaterialApp(home: DrawerExample(),));
 }
 class  DrawerExample extends StatelessWidget {
+  const DrawerExample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("AppBar"),),
+      appBar: AppBar(title: const Text("AppBar"),),
       drawer: Drawer(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.bottomRight,
                 end: Alignment.topRight,
@@ -23,66 +25,66 @@ class  DrawerExample extends StatelessWidget {
           ),
           child: ListView(
             children: [
-              ListTile(
+              const ListTile(
                 leading: CircleAvatar(
                   backgroundImage: AssetImage("assets/img/sundar1.png"),
 
                 ),
                 title: Text("Sundar Pachai"),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
                 width: 40,
               ),
               ListTile(
-                leading: Icon(Icons.dashboard),
-                title: Text("Dashboard"),
+                leading: const Icon(Icons.dashboard),
+                title: const Text("Dashboard"),
                 onTap: (){
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Navdrawer1()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>const Navdrawer1()));
                 },
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.leak_add_sharp),
                 title: Text("Leads"),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.people),
                 title: Text("Client"),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.pattern),
                 title: Text("Patients"),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.subscriptions),
                 title: Text("Subscriptions"),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.payment),
                 title: Text("Payment"),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.verified_user_sharp),
                 title: Text("Userss"),
               ),
-              ListTile(
+              const ListTile(
                 leading: Icon(Icons.library_add),
                 title: Text("Library"),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
                 width: 100,
               ),
               ElevatedButton(
                 onPressed: (){},
-                child: Text("Log Out"),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.redAccent[200],
                     shadowColor: Colors.redAccent[200],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)
                     )
-                ),)
+                ),
+                child: const Text("Log Out"),)
 
             ],
           ),

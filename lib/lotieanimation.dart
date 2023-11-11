@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 void main(){
-  runApp(MaterialApp(home: LottieExample(),));
+  runApp(const MaterialApp(home: LottieExample(),));
 }
 class LottieExample extends StatelessWidget {
+  const LottieExample({super.key});
+
 
 
   @override

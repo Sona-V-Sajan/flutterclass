@@ -14,6 +14,8 @@ class TourismUi extends StatelessWidget {
   ];
    var text = ["Germany", "Canada", "Italy", "France", "Europe"];
 
+  TourismUi({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -3,15 +3,17 @@ import 'package:project2/passing%20data%20between%20screen/using%20contsructor/t
 import 'package:project2/passing%20data%20between%20screen/using%20contsructor/toStatelessPage.dart';
 
 void main() {
-  runApp(MaterialApp(home: MainPage2(),));
+  runApp(const MaterialApp(home: MainPage2(),));
 }
 
 class MainPage2 extends StatelessWidget {
+  const MainPage2({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title:
-      Text("Data Passing"),),
+      const Text("Data Passing"),),
       body: Center(
         child: Column(
           children: [
@@ -25,7 +27,7 @@ class MainPage2 extends StatelessWidget {
                              location: "Kakkanad",
                              phone:86355242
 
-                         ))), child: Text("To Stateless")),
+                         ))), child: const Text("To Stateless")),
             ),
             ElevatedButton(onPressed: () =>
                 Navigator.of(context).push(
@@ -36,7 +38,7 @@ class MainPage2 extends StatelessWidget {
 
 
                     ))),
-                child: Text("To StateFul"))
+                child: const Text("To StateFul"))
           ],
 
         ),

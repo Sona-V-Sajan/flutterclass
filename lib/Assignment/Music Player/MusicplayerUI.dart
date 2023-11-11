@@ -19,6 +19,8 @@ class MusicPlayer extends StatelessWidget {
   var  text=("Top 50","Pop Music","LOFI REMIXES","M+IKE","CAR MUSIC","TIKTOKSONGS");
   int selectedIndex = 0;
 
+  MusicPlayer({super.key});
+
   void onButtonPressed(int newIndex) {
     setState(() {
       selectedIndex = newIndex;
@@ -42,7 +44,7 @@ class MusicPlayer extends StatelessWidget {
         ],
         selectedIndex: selectedIndex,
         onButtonPressed: onButtonPressed,
-        activeColor: const Color(0xFFFE4B8AE),
+        activeColor: const Color(0xfffe4b8ae),
         inactiveColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -53,9 +55,9 @@ class MusicPlayer extends StatelessWidget {
                 height: 40,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: const BorderRadius.all(Radius.circular(10)),
                     border: Border.all(
-                      color: Color(0xFFFE4B8AE), // Set the border color here
+                      color: const Color(0xfffe4b8ae), // Set the border color here
                        // Adjust the border width if needed
                     ),
 
@@ -67,10 +69,10 @@ class MusicPlayer extends StatelessWidget {
                   decoration: InputDecoration(
                   border: InputBorder.none,
                     hintText: "Search...",
-                    hintStyle: TextStyle(color: Color(0xFFFE4B8AE)),
+                    hintStyle: TextStyle(color: Color(0xfffe4b8ae)),
                     suffixIcon: Icon(
                       Icons.search,
-                      color: Color(0xFFFE4B8AE),
+                      color: Color(0xfffe4b8ae),
                     ),
                     ),
                   ),
@@ -82,7 +84,7 @@ class MusicPlayer extends StatelessWidget {
                   child: Text(
                     "Playlists",
                     style: TextStyle(
-                        color: Color(0xFFFE4B8AE),
+                        color: Color(0xfffe4b8ae),
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
@@ -127,5 +129,5 @@ class MusicPlayer extends StatelessWidget {
     );
   }
 
-  void setState(Null Function()) {}
+  void setState(Null Function() Function) {}
 }

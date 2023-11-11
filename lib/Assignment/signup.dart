@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:project2/Assignment/loginpage.dart';
 
 class SignUp extends StatefulWidget {
+  const SignUp({super.key});
+
   @override
   State<SignUp> createState() => _SignUpState();
 }
@@ -102,7 +104,7 @@ class _SignUpState extends State<SignUp> {
               height: 60,
               onPressed: () {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => LoginPage()));
+                    .push(MaterialPageRoute(builder: (context) => const LoginPage()));
               },
               color: Colors.green,
               shape: RoundedRectangleBorder(

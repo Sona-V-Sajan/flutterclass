@@ -3,6 +3,8 @@ import 'package:project2/storage/sharedpreference/login_page_prefs.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeeShared extends StatefulWidget {
+  const HomeeShared({super.key});
+
   @override
   State<HomeeShared> createState() => _HomeeSharedState();
 }
@@ -30,16 +32,16 @@ class _HomeeSharedState extends State<HomeeShared> {
         child: Column(
           children: [
             Text("Welcome $username"),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ElevatedButton(
                 onPressed: () {
                   preferences.setBool("newuser", true);
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) => Login_Shared()));
+                      MaterialPageRoute(builder: (context) => const Login_Shared()));
                 },
-                child: Text("Logout"))
+                child: const Text("Logout"))
           ],
         ),
       ),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 void main(){
-  runApp(MaterialApp(home: RiveAnime(),));
+  runApp(const MaterialApp(home: RiveAnime(),));
 }
 class RiveAnime extends StatelessWidget {
+  const RiveAnime({super.key});
+
 
 
   @override

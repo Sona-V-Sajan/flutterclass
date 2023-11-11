@@ -11,7 +11,7 @@ class SQL_Db{
 
 //create Table
   static Future<void> createTable(sql.Database db) async {
-    await db.execute('CREATE TABLE user (id INTEGER PRIMARY KEY AUTO INCREMENT NOT NULL, name TEXT, username TEXT, password TEXT)');
+    await db.execute('CREATE TABLE user (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT, username TEXT, password TEXT)');
   }
   static Future<int> AddNewUser(String name, String username, String password) async{
     final db = await SQL_Db.OpenDb();

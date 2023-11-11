@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project2/practice/statefull_login.dart';
 void main(){
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home :Splash2(),
   ));
 }
 class Splash2 extends StatefulWidget{
+  const Splash2({super.key});
+
   @override
   State<StatefulWidget> createState() =>Splash2State();
 }
@@ -15,8 +17,8 @@ class Splash2 extends StatefulWidget{
 class Splash2State extends State{
   @override
   void initState(){
-    Timer(Duration(seconds: 4), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context)=>Login_state()));
+    Timer(const Duration(seconds: 4), () {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context)=>const Login_state()));
     });
     super.initState();
   }
@@ -36,7 +38,7 @@ class Splash2State extends State{
             //   color: Colors.white,
             // ),
             // Image(image: AssetImage(("assets/icons/img.png")),width: 100,height: 100,),
-            Image(
+            const Image(
               image: NetworkImage(
                   "https://cdn0.iconfinder.com/data/icons/leto-survey-rating/64/__laptop_online_survey_checkmark_select-512.png"),
               width: 100,

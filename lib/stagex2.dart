@@ -19,12 +19,14 @@ class StaggeredExample2 extends StatelessWidget {
   var cas=[2,3,3,2,2,2,3,1,1,2,1];
   var mas=[1,2,3,2,1,4,3,2,1,3,1];
 
+  StaggeredExample2({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Staggered Grid view"),
+        title: const Text("Staggered Grid view"),
       ),
       body: SingleChildScrollView(
         child: SingleChildScrollView(

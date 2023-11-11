@@ -4,6 +4,8 @@ import 'package:project2/storage/sharedpreference/Login_page_prefs.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Register_Shared extends StatefulWidget {
+  const Register_Shared({super.key});
+
   @override
   State<Register_Shared> createState() => _Register_SharedState();
 }
@@ -18,7 +20,7 @@ class _Register_SharedState extends State<Register_Shared> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Registration"),
+        title: const Text("Registration"),
       ),
       body: Center(
         child: Column(

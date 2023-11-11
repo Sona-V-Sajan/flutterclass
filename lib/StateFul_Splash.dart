@@ -2,13 +2,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project2/statefullogin.dart';
-import 'loginPage.dart';
 void main(){
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
   home :Splash2(),
   ));
 }
 class Splash2 extends StatefulWidget{
+  const Splash2({super.key});
+
   @override
   State<StatefulWidget> createState() =>Splash2State();
 }
@@ -17,7 +18,7 @@ class Splash2State extends State{
   @override
   void initState(){
     Timer(const Duration(seconds: 4), () {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context)=>Login_stateful()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context)=>const Login_stateful()));
     });
     super.initState();
   }

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:project2/practice/stateful_Splash.dart';
 void main(){
-  runApp(MaterialApp(home: IntroScreen(),));
+  runApp(const MaterialApp(home: IntroScreen(),));
 }
 class IntroScreen extends StatelessWidget {
+  const IntroScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     PageDecoration decorationPage=const PageDecoration(
@@ -57,9 +59,9 @@ class IntroScreen extends StatelessWidget {
 
       ],
       onSkip:()=>Navigator.of(context).push(MaterialPageRoute(builder:
-      (context)=>Splash2())),
+      (context)=>const Splash2())),
       onDone:()=>Navigator.of(context).push(MaterialPageRoute(builder:
-          (context)=>Splash2())),
+          (context)=>const Splash2())),
       showSkipButton: true,
       skip: const Text("Skip"),
       // showBackButton:true,

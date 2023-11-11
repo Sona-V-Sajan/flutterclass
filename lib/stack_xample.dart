@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: StackEx(),));
+  runApp(const MaterialApp(home: StackEx(),));
 }
 
 class StackEx extends StatelessWidget {
+  const StackEx({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Stack Ex"),),
+      appBar: AppBar(title: const Text("Stack Ex"),),
       body: Center(
         child: Stack(
           children: [

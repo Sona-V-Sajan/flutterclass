@@ -3,6 +3,8 @@ import 'package:project2/statefulregistration.dart';
 import 'homepage.dart';
 
 class Login_stateful extends StatefulWidget {
+  const Login_stateful({super.key});
+
   @override
   State<Login_stateful> createState() => _Login_statefulState();
 }
@@ -53,7 +55,7 @@ class _Login_statefulState extends State<Login_stateful> {
                     }
                   },
                   decoration:  InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: const OutlineInputBorder(),
                       hintText: 'Password',
                       suffixIcon: IconButton(onPressed: (){
                         setState(() {
@@ -73,16 +75,16 @@ class _Login_statefulState extends State<Login_stateful> {
                 final valid = key1.currentState!.validate();
                 if(valid){
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => Homepage()));
+                      builder: (context) => const Homepage()));
                 }else{
                   ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text('Inavlid datas')));
                 }
-              }, child: Text("Login")),
+              }, child: const Text("Login")),
               TextButton(
                   onPressed: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Reg_stateful()));
+                        builder: (context) => const Reg_stateful()));
                   },
                   child: const Text('Not a User? SignUp Here!!!!'))
             ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: DraweEx(),));
+  runApp(const MaterialApp(home: DraweEx(),));
 }
 class DraweEx extends StatelessWidget {
   const DraweEx({super.key});

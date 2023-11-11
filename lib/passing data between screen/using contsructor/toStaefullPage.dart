@@ -19,9 +19,9 @@ class _DatastatefullState extends State<Datastatefull> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Name        :${widget.name}",style: TextStyle(fontSize: 20),),
-            Text("Location    :${widget.location}",style: TextStyle(fontSize: 12),),
-            Text("Phone       :${widget.phone}",style: TextStyle(fontSize: 10),)
+            Text("Name        :${widget.name}",style: const TextStyle(fontSize: 20),),
+            Text("Location    :${widget.location}",style: const TextStyle(fontSize: 12),),
+            Text("Phone       :${widget.phone}",style: const TextStyle(fontSize: 10),)
           ],
         ),
       ),

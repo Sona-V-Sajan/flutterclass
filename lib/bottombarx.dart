@@ -4,11 +4,13 @@ import 'package:project2/Assignment/gridview1.dart';
 import 'package:project2/Listview/listview_constructor.dart';
 import 'package:project2/ficard.dart';
 void main(){
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: BottomBar(),
   ));
 }
 class BottomBar extends StatefulWidget {
+  const BottomBar({super.key});
+
 
   @override
   State<BottomBar> createState() => _BottomBarState();
@@ -17,11 +19,11 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int index=0;
   var screens=[
-    FiCard(),
+    const FiCard(),
     GridView1(),
-    ListView1(),
+    const ListView1(),
     GridView1(),
-    ListView1(),
+    const ListView1(),
 
   ];
   @override
@@ -29,7 +31,7 @@ class _BottomBarState extends State<BottomBar> {
     return Scaffold(
       bottomNavigationBar: ConvexAppBar(
         style: TabStyle.react,
-        items: [
+        items: const [
           TabItem(icon: Icons.list),
           TabItem(icon: Icons.calendar_today),
           TabItem(icon: Icons.assessment),

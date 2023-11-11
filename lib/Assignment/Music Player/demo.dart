@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:collection';
 
 void main() {
-  runApp(new MaterialApp(home: new DemoApp()));
+  runApp(const MaterialApp(home: DemoApp()));
 }
 
 class DemoApp extends StatelessWidget {
+  const DemoApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(title: new Text('Nested ListView Example')),
-      body: new Center(
-        child: new ListView(
+    return Scaffold(
+      appBar: AppBar(title: const Text('Nested ListView Example')),
+      body: Center(
+        child: ListView(
           children: <Widget>[
-            new Container(
+            SizedBox(
               height: 80.0,
-              child: new ListView(
+              child: ListView(
                 scrollDirection: Axis.horizontal,
-                children: new List.generate(10, (int index) {
-                  return new Card(
+                children: List.generate(10, (int index) {
+                  return Card(
                     color: Colors.blue[index * 100],
-                    child: new Container(
+                    child: SizedBox(
                       width: 50.0,
                       height: 50.0,
-                      child: new Text("$index"),
+                      child: Text("$index"),
                     ),
                   );
                 }),

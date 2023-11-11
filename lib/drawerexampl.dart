@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:project2/sundarpacahi.dart';
 
 void main(){
-  runApp(MaterialApp(home: DrawerExample(),));
+  runApp(const MaterialApp(home: DrawerExample(),));
 }
 class  DrawerExample extends StatelessWidget {
+  const DrawerExample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +40,7 @@ class  DrawerExample extends StatelessWidget {
                 leading: const Icon(Icons.dashboard),
                 title: const Text("Dashboard"),
                 onTap: (){
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Navdrawer1()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>const Navdrawer1()));
                 },
               ),
               const ListTile(
@@ -75,14 +77,14 @@ class  DrawerExample extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: (){},
-                child: const Text("Log Out"),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.redAccent[200],
                     shadowColor: Colors.redAccent[200],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)
                     )
-                ),)
+                ),
+                child: const Text("Log Out"),)
 
             ],
           ),

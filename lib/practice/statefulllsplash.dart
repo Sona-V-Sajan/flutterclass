@@ -1,15 +1,16 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:project2/StateFul_Splash.dart';
 import 'package:project2/practice/login.dart';
 
 void main(){
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Splash3(),
   ));
 }
 class Splash3 extends StatefulWidget{
+  const Splash3({super.key});
+
   @override
   State<StatefulWidget> createState() => Splash3state();
 
@@ -17,9 +18,9 @@ class Splash3 extends StatefulWidget{
 class Splash3state extends State{
   @override
   void initState() {
-    Timer(Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 4), () {
       Navigator.of(context).
-      push(MaterialPageRoute(builder: (context)=>Login()));
+      push(MaterialPageRoute(builder: (context)=>const Login()));
     });
     super.initState();
   }
@@ -31,7 +32,7 @@ class Splash3state extends State{
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center, // Center the children horizontally
         children: [//sizesboxvech cheyam,align align height
-          Expanded(
+          const Expanded(
             flex: 18, // Adjust the flex value to control the spacing between image and text
             child: Center(
               child: Image(

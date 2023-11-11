@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 void main(){
-  runApp(MaterialApp(home: GridView4(),));
+  runApp(const MaterialApp(home: GridView4(),));
 }
 class GridView4 extends StatelessWidget {
+  const GridView4({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

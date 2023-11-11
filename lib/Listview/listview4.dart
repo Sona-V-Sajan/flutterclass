@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home:ListView4() ,));
+  runApp(const MaterialApp(home:ListView4() ,));
 }
 
 class ListView4 extends StatelessWidget {
+  const ListView4({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -11,19 +13,19 @@ class ListView4 extends StatelessWidget {
       body: ListView.custom(
           childrenDelegate:
           SliverChildListDelegate([
-            Card(
+            const Card(
               child: Icon(Icons.account_circle)
           ),
-            Card(
+            const Card(
                 child: Icon(Icons.account_circle)
             ),
-            Card(
+            const Card(
                 child: Icon(Icons.account_circle)
             ),
-            Card(
+            const Card(
                 child: Icon(Icons.account_circle)
             ),
-            Card(
+            const Card(
                 child: Icon(Icons.account_circle)
             ),
           ])

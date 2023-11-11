@@ -4,9 +4,9 @@ import 'package:project2/passing%20data%20between%20screen/using%20navigator/dum
 
 void main() {
   runApp(MaterialApp(
-    home: ProductPage(),
+    home: const ProductPage(),
     routes: {
-      "details": (context) => ProductDetails(),
+      "details": (context) => const ProductDetails(),
       //enganne ethu page ine venamenklum vilika
     },
 
@@ -14,14 +14,16 @@ void main() {
 }
 
 class ProductPage extends StatelessWidget {
+  const ProductPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Product Details"),
+        title: const Text("Product Details"),
       ),
       body: GridView(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2, mainAxisSpacing: 1, crossAxisSpacing: 1),
         //products=list name in dummy data
         children: products

@@ -4,14 +4,16 @@ import 'package:project2/Assignment/TourismApp/dummypag.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: TourismHome(),
+    home: const TourismHome(),
     routes: {
-      "details": (context) => PageDetails(),
+      "details": (context) => const PageDetails(),
     },
   ));
 }
 
 class TourismHome extends StatelessWidget {
+  const TourismHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -168,6 +170,9 @@ class TourismHome extends StatelessWidget {
               minWidth: 400,
               height: 50,
               onPressed: () {},
+              color: const Color(0xFF27285C),
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(4))),
               child: const Text(
                 "Explore",
                 style: TextStyle(
@@ -175,9 +180,6 @@ class TourismHome extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.bold),
               ),
-              color: const Color(0xFF27285C),
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(4))),
             ),
           ),
         ],

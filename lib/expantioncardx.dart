@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: ExpantionEx(),));
+  runApp(const MaterialApp(home: ExpantionEx(),));
 }
 class ExpantionEx extends StatelessWidget {
+  const ExpantionEx({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("xpanssion Card"),),
-      body: Column(
+      appBar: AppBar(title: const Text("xpanssion Card"),),
+      body: const Column(
         children: [
           ExpansionTile(title: Text("Colors"),
           subtitle: Text("Expand to view more"),

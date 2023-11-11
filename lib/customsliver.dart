@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: SliverEx(),));
+  runApp(const MaterialApp(home: SliverEx(),));
 }
 class SliverEx extends StatelessWidget {
+  const SliverEx({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: Ex_sliverAppbar(),));
+  runApp(const MaterialApp(home: Ex_sliverAppbar(),));
 }
 class Ex_sliverAppbar extends StatelessWidget {
+  const Ex_sliverAppbar({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +13,7 @@ class Ex_sliverAppbar extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            leading: Icon(Icons.menu),
+            leading: const Icon(Icons.menu),
             // title: Text("S L I V E R A P P B A R"),//fixed text
             expandedHeight: 300,
             floating: false,//is true down th app bar will appear immediately so no matter where i are on list and start scrolling down the app bar will appears   immediately then
@@ -21,7 +23,7 @@ class Ex_sliverAppbar extends StatelessWidget {
               background: Container(
                 color: Colors.pink,
               ),
-              title: Text("S L I V E R A P P B A R"),//moving bottom to up & up to bottom
+              title: const Text("S L I V E R A P P B A R"),//moving bottom to up & up to bottom
             ),
             
           ),
@@ -32,7 +34,7 @@ class Ex_sliverAppbar extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Container(
-                  height:400,
+                  // height:400,
                   color: Colors.deepPurple[300],
                 ),
               ),

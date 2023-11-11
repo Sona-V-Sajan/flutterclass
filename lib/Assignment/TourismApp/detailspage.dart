@@ -6,6 +6,8 @@ import 'package:project2/Assignment/TourismApp/dummypag.dart';
 //   runApp(MaterialApp(home: PageDetails(),));
 // }
 class PageDetails extends StatelessWidget {
+  const PageDetails({super.key});
+
   @override
   Widget build(BuildContext context) {
     var id = ModalRoute.of(context)?.settings.arguments;
@@ -214,7 +216,7 @@ class PageDetails extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(4.0),
                     child: Text(
-                      "Adult\  02",
+                      "Adult  02",
                       style: TextStyle(fontSize: 10),
                     ),
                   ),
@@ -229,7 +231,7 @@ class PageDetails extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(4.0),
                     child: Text(
-                      "Adult\  02",
+                      "Adult  02",
                       style: TextStyle(fontSize: 10),
                     ),
                   ),
@@ -244,7 +246,7 @@ class PageDetails extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(4.0),
                     child: Text(
-                      "Adult\  02",
+                      "Adult  02",
                       style: TextStyle(fontSize: 10),
                     ),
                   ),
@@ -259,7 +261,7 @@ class PageDetails extends StatelessWidget {
                   child: const Padding(
                     padding: EdgeInsets.all(4.0),
                     child: Text(
-                      "Adult\  02",
+                      "Adult  02",
                       style: TextStyle(fontSize: 10),
                     ),
                   ),

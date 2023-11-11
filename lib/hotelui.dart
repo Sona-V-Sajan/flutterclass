@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: HotelUi()));
+  runApp(const MaterialApp(home: HotelUi()));
 }
 
 class HotelUi extends StatelessWidget {
+  const HotelUi({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           Container(),
-          Container(
+          const SizedBox(
             width: double.infinity,
             height:350,
             child: Image(
@@ -110,15 +112,15 @@ class HotelUi extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {
               },
-              child: const Text(' Book Now',style: TextStyle(fontWeight:
-              FontWeight.bold),),
               style: TextButton.styleFrom(
                backgroundColor: Colors.purple,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                minimumSize: Size(310, 50)
+                minimumSize: const Size(310, 50)
               ),
+              child: const Text(' Book Now',style: TextStyle(fontWeight:
+              FontWeight.bold),),
             ),
           ),
 

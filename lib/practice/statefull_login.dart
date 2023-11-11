@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project2/practice/statefull_registration.dart';
-import '../home.dart';
 void main(){
-  runApp(MaterialApp(home: Login_state(),));
+  runApp(const MaterialApp(home: Login_state(),));
 }
 class Login_state extends StatefulWidget {
+  const Login_state({super.key});
+
   @override
   State<Login_state> createState() => _Login_stateState();
 }
@@ -13,7 +14,7 @@ class Login_state extends StatefulWidget {
 class _Login_stateState extends State<Login_state> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(appBar: AppBar(title: Text("Login"),),
+    return  Scaffold(appBar: AppBar(title: const Text("Login"),),
       body: Column(
         children: [
           Image.asset(
@@ -28,7 +29,7 @@ class _Login_stateState extends State<Login_state> {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: TextFormField(
-              decoration: InputDecoration(border:
+              decoration: const InputDecoration(border:
               OutlineInputBorder(),
               hintText: "Username",
               helperText: "Must be an letters",
@@ -37,7 +38,7 @@ class _Login_stateState extends State<Login_state> {
               ),
               //here uname is value entered a textformfield will stored at uname
               validator: (uname){
-                if(uname!.isEmpty || !uname!.contains("@")|| !uname.contains(".com")){
+                if(uname!.isEmpty || !uname.contains("@")|| !uname.contains(".com")){
                   return "Username must not be empty or invalid";
                 }
                 else{
@@ -57,7 +58,7 @@ class _Login_stateState extends State<Login_state> {
                   return null;
                 }
               },
-              decoration: InputDecoration(border:
+              decoration: const InputDecoration(border:
               OutlineInputBorder(),
                 hintText: "Password",
                 helperText: "Must be an special characters and numbers",
@@ -68,13 +69,13 @@ class _Login_stateState extends State<Login_state> {
           ElevatedButton(onPressed: () {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => Home()));
-          }, child: Text("Login")),
+          }, child: const Text("Login")),
           TextButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) =>  registration_stateful()));
+                    builder: (context) =>  const registration_stateful()));
               },
-              child: Text("Not a user?Signup Here!!"))
+              child: const Text("Not a user?Signup Here!!"))
         ],
       ),
     );

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: NaviDrawer(),));
+  runApp(const MaterialApp(home: NaviDrawer(),));
 }
 class NaviDrawer extends StatelessWidget {
+  const NaviDrawer({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold( 
       appBar: AppBar(
-        title: Text("My APP"),
+        title: const Text("My APP"),
       ),
       drawer: Drawer(
         child: ListView(

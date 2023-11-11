@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Login_Db extends StatefulWidget {
+  const Login_Db({super.key});
+
   @override
   State<Login_Db> createState() => _Login_DbState();
 }
@@ -11,7 +13,7 @@ class _Login_DbState extends State<Login_Db> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(title: Text("Loginpage"),),
+      appBar: AppBar(title: const Text("Loginpage"),),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -34,7 +36,7 @@ class _Login_DbState extends State<Login_Db> {
             decoration: const InputDecoration(
                 border: OutlineInputBorder(), hintText: "Password"),
           ),
-          ElevatedButton(onPressed: (){}, child: Text("Login")),
+          ElevatedButton(onPressed: (){}, child: const Text("Login")),
 
 
         ],

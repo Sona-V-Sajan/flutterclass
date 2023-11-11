@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:project2/home.dart';
 import 'package:project2/practice/register.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Login(),
   ));
 }
 
 class Login extends StatefulWidget {
+  const Login({super.key});
+
   @override
   State<Login> createState() => _LoginState();
 }
@@ -20,11 +21,11 @@ class _LoginState extends State<Login> {
     String Username = "admin@gmail.com";
     String Password = "abc@123";
 
-    final uname_controller = TextEditingController();
-    final pass_controller = TextEditingController();
+    final unameController = TextEditingController();
+    final passController = TextEditingController();
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login Page"),
+        title: const Text("Login Page"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
@@ -42,8 +43,8 @@ class _LoginState extends State<Login> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: TextField(
-                controller: uname_controller,
-                decoration: InputDecoration(
+                controller: unameController,
+                decoration: const InputDecoration(
                   hintText: "UserName",
                   labelText: "UserName",
                   helperText: "User name must be an email",
@@ -58,37 +59,37 @@ class _LoginState extends State<Login> {
               child: TextField(
                 obscureText: true,
                 obscuringCharacter: '*',
-                controller: pass_controller,
+                controller: passController,
                 decoration: InputDecoration(
                     hintText: "PassWord",
                     labelText: "PassWord",
                     helperText: "Password must be 6 character",
-                    prefix: Icon(Icons.password),
+                    prefix: const Icon(Icons.password),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(14.0))),
               ),
             ),
             ElevatedButton(
                 onPressed: () {
-                  if (Username == uname_controller.text &&
-                      Password == pass_controller.text) {
+                  if (Username == unameController.text &&
+                      Password == passController.text) {
                     Navigator.of(context)
                         .push(MaterialPageRoute(builder: (context) => Home()));
                   } else {
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                       content: Text(
                           "Invalid username or password or the fields are empty"),
                       backgroundColor: Colors.red,
                     ));
                   }
                 },
-                child: Text("Login")),
+                child: const Text("Login")),
             TextButton(
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => RegistrationPage()));
+                      builder: (context) => const RegistrationPage()));
                 },
-                child: Text("Not a user?Signup Here!!"))
+                child: const Text("Not a user?Signup Here!!"))
           ],
         ),
       ),

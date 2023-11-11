@@ -5,7 +5,7 @@ class DataStateles extends StatelessWidget {
   int phone;
 
 
-   DataStateles ({ required this.name, required this.location, required  this.phone});
+   DataStateles ({super.key,  required this.name, required this.location, required  this.phone});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,9 @@ class DataStateles extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Name           :$name",style: TextStyle(fontSize: 10),),
-            Text("Location       :$location",style: TextStyle(fontSize: 10),),
-            Text("Phone          :$phone",style: TextStyle(fontSize: 10),)
+            Text("Name           :$name",style: const TextStyle(fontSize: 10),),
+            Text("Location       :$location",style: const TextStyle(fontSize: 10),),
+            Text("Phone          :$phone",style: const TextStyle(fontSize: 10),)
           ],
         ),
       ),

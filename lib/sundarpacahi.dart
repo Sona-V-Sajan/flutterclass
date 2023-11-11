@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 void main(){
-  runApp(MaterialApp(home: Navdrawer1(),));
+  runApp(const MaterialApp(home: Navdrawer1(),));
 }
 class Navdrawer1 extends StatelessWidget {
+  const Navdrawer1({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +19,10 @@ class Navdrawer1 extends StatelessWidget {
       body: Stack(
         children: [
           Container(),
-          Container(
+          const SizedBox(
             width: double.infinity,
             height: 350,
-            child: const Image(image: AssetImage("assets/img/sundar3.jpg"),
+            child: Image(image: AssetImage("assets/img/sundar3.jpg"),
               fit: BoxFit.fill,
             ),
 

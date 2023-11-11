@@ -9,7 +9,7 @@ class Custom_Cart extends StatelessWidget {
   IconData? favourite;
   String? rating;
 
-  Custom_Cart({
+  Custom_Cart({super.key, 
     required this.image,
     required this.description,
     required this.pricing,

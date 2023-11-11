@@ -9,10 +9,12 @@ var  icon=[Icons.account_circle,Icons.account_circle,Icons.account_circle,Icons.
 var  backgroundColors = [Colors.blue, Colors.pink, Colors.orange, Colors.blue,Colors.green, Colors.red, Colors.yellow, Colors.blue];
 var  arrow=[">",">",">",">",">",">",">",">"];
 
+  Contact_ui({super.key});
+
 @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("SimpleContactList"),
+        appBar: AppBar(title: const Text("SimpleContactList"),
         ),
         body: ListView(children: List.generate(8, (index) =>
             Card(
@@ -23,8 +25,8 @@ var  arrow=[">",">",">",">",">",">",">",">"];
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     CircleAvatar(
+                     backgroundColor:backgroundColors[index] ,
                      child:  Icon(icon[index]),
-                      backgroundColor:backgroundColors[index] ,
                       )
                   ],
                 ),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 void main(){
-  runApp(MaterialApp(home: ListView_Separated(),));
+  runApp(const MaterialApp(home: ListView_Separated(),));
 }
 class ListView_Separated extends StatelessWidget {
+  const ListView_Separated({super.key});
+
 
 
   @override
@@ -22,7 +24,8 @@ class ListView_Separated extends StatelessWidget {
           separatorBuilder: (context,index){
             if(index % 4 == 0){
               return const Card(
-              child: Text("data"),color: Colors.red,);
+              color: Colors.red,
+              child: Text("data"),);
             }
             else{
               return const SizedBox();

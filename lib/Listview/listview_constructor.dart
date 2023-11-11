@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 void main(){
 runApp(MaterialApp(
   theme:ThemeData(primarySwatch: Colors.teal),
-  home: ListView1(),));
+  home: const ListView1(),));
 
 }
 class ListView1 extends StatelessWidget {
+  const ListView1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ListView1"),
+        title: const Text("ListView1"),
       ),
       body: ListView(
         children:  const [

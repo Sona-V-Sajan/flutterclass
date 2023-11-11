@@ -4,6 +4,8 @@ void main(){
 }
 class Orientation_screen extends StatelessWidget {
   var orientation ,height,width;
+
+  Orientation_screen({super.key});
   @override
   Widget build(BuildContext context) {
     //getting the orientation of the app
@@ -14,7 +16,7 @@ class Orientation_screen extends StatelessWidget {
     width=MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        title: Text("Orientation Media Query"),
+        title: const Text("Orientation Media Query"),
         backgroundColor: Colors.green,
       ),
       //checking the orientation

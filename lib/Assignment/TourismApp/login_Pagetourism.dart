@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Login_Tourism extends StatelessWidget {
+  const Login_Tourism({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,6 @@ class Login_Tourism extends StatelessWidget {
             height: 40,
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text("Log In"),
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue[700],
                   textStyle: const TextStyle(
@@ -25,6 +26,7 @@ class Login_Tourism extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
                   minimumSize: const Size(150, 50)),
+              child: const Text("Log In"),
             ),
           ),
           const SizedBox(height: 40, child: Text("-or-")),
@@ -34,6 +36,9 @@ class Login_Tourism extends StatelessWidget {
               minWidth: 160,
               height: 60,
               onPressed: () {},
+              color: Colors.blue,
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(40))),
               child: const Center(
                 child: Row(
                   children: [
@@ -54,9 +59,6 @@ class Login_Tourism extends StatelessWidget {
                   ],
                 ),
               ),
-              color: Colors.blue,
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(40))),
             ),
           ),
           const SizedBox(
@@ -68,6 +70,9 @@ class Login_Tourism extends StatelessWidget {
               minWidth: 160,
               height: 60,
               onPressed: () {},
+              color: Colors.blueAccent,
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(40))),
               child: const Center(
                 child: Row(
                   children: [
@@ -88,9 +93,6 @@ class Login_Tourism extends StatelessWidget {
                   ],
                 ),
               ),
-              color: Colors.blueAccent,
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(40))),
             ),
           ),
           const SizedBox(
@@ -102,6 +104,9 @@ class Login_Tourism extends StatelessWidget {
               minWidth: 160,
               height: 60,
               onPressed: () {},
+              color: Colors.red,
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(40))),
               child: const Center(
                 child: Row(
                   children: [
@@ -122,9 +127,6 @@ class Login_Tourism extends StatelessWidget {
                   ],
                 ),
               ),
-              color: Colors.red,
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(40))),
             ),
           ),
         ],

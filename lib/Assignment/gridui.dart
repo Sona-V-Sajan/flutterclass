@@ -22,6 +22,8 @@ class GridView1 extends StatelessWidget {
     Icons.pages_outlined
   ];
 
+  GridView1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

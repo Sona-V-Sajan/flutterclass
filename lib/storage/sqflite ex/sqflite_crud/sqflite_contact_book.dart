@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project2/storage/sqflite%20ex/sqflite_crud/sql_function.dart';
 void main(){
-  runApp(MaterialApp(home: Contact_Book(),));
+  runApp(const MaterialApp(home: Contact_Book(),));
 }
 
 class Contact_Book extends StatefulWidget {
+  const Contact_Book({super.key});
+
   @override
   State<Contact_Book> createState() => _Contact_BookState();
 }
@@ -17,7 +19,7 @@ class _Contact_BookState extends State<Contact_Book> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My contact"
+        title: const Text("My contact"
       ),),
       body: isloading
           ? Text(
@@ -30,17 +32,17 @@ class _Contact_BookState extends State<Contact_Book> {
             return Card(
               child: ListTile(
                 leading: CircleAvatar(
-                  child: Icon(Icons.person),
                   backgroundColor:
                   Colors.primaries[index % Colors.primaries.length],
+                  child: const Icon(Icons.person),
                 ),
                 title: Text(contacts[index] ["cname"]),
                 subtitle: Text(contacts[index] ["cnumber"]),
                 trailing: Wrap(
                   children: [
                     IconButton(
-                        onPressed: () => showSheet(contacts[index]["id"]), icon: Icon(Icons.edit)),
-                    IconButton(onPressed: () {}, icon: Icon(Icons.delete))
+                        onPressed: () => showSheet(contacts[index]["id"]), icon: const Icon(Icons.edit)),
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.delete))
                   ],
                 ),
               ),
@@ -48,7 +50,7 @@ class _Contact_BookState extends State<Contact_Book> {
           }),
       floatingActionButton: FloatingActionButton(
         onPressed: () => showSheet(null),
-        child: Icon(Icons.person_add_alt_1_outlined),),
+        child: const Icon(Icons.person_add_alt_1_outlined),),
     );
   }
 
@@ -82,7 +84,7 @@ class _Contact_BookState extends State<Contact_Book> {
               padding: const EdgeInsets.all(8.0),
               child: TextField(
                 controller: name_controller,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: "Name"
                 ),
@@ -92,7 +94,7 @@ class _Contact_BookState extends State<Contact_Book> {
               padding: const EdgeInsets.all(8.0),
               child: TextField(
                 controller: num_controller,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: "Number"
                 ),

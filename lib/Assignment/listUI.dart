@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Cities_Ui(),
   ));
 }
 
 class Cities_Ui extends StatelessWidget {
+  const Cities_Ui({super.key});
 
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

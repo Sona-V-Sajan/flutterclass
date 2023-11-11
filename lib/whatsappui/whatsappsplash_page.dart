@@ -1,28 +1,28 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:project2/statefullogin.dart';
+import 'package:project2/whatsappui/home_page.dart';
 void main(){
-  runApp(MaterialApp(home: WhatsappSplash(),));
+  runApp(const MaterialApp(home: WhatsappSplash(),));
 }
 class WhatsappSplash extends StatefulWidget {
+  const WhatsappSplash({super.key});
+
   @override
   State<WhatsappSplash> createState() => _WhatsappSplashState();
 }
 class _WhatsappSplashState extends State<WhatsappSplash> {
   @override
   void initState(){
-    Timer(Duration(seconds: 4),(){
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login_stateful()));
+    Timer(const Duration(seconds: 4),(){
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>HomeWhatsapp()));
     });
     super.initState();
 
   }
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

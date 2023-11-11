@@ -9,7 +9,7 @@ class Cart_customizing extends StatelessWidget {
   IconData? favourite;
   String? rating;
 
-  Cart_customizing({
+  Cart_customizing({super.key, 
     required this.image,
     required this.description,
     required this.pricing,
@@ -52,7 +52,7 @@ class Cart_customizing extends StatelessWidget {
                   children: [
                     Text(
                       pricing!,
-                      style: TextStyle(color: Colors.blueAccent, fontSize: 10, fontWeight: FontWeight.bold),
+                      style: const TextStyle(color: Colors.blueAccent, fontSize: 10, fontWeight: FontWeight.bold),
                     ),
                     Icon(favourite!, color: Colors.grey),
                   ],
@@ -71,7 +71,7 @@ class Cart_customizing extends StatelessWidget {
                     ),
                     Text(
                       rating!,
-                      style: TextStyle(fontSize: 10, fontWeight: FontWeight.normal),
+                      style: const TextStyle(fontSize: 10, fontWeight: FontWeight.normal),
                     ),
                   ],
                 ),

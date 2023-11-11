@@ -8,7 +8,7 @@ class Custom_Card extends StatelessWidget {
   VoidCallback? click;
   VoidCallback? click1;
 
-  Custom_Card({
+  Custom_Card({super.key, 
     required this.image,
     required this.text,
     this.icon,
@@ -23,7 +23,7 @@ class Custom_Card extends StatelessWidget {
         children: [
           Stack(children: [
             Image(image: image!),
-            Positioned(
+            const Positioned(
               top: 18,
               right: 18,
               child: Icon(
@@ -46,11 +46,11 @@ class Custom_Card extends StatelessWidget {
             children: [
               ElevatedButton(
                   onPressed: click,
-                  child: Icon(
+                  child: const Icon(
                     Icons.shopping_bag,
                     color: Colors.white,
                   )),
-              ElevatedButton(onPressed: click1, child: Text("Button"))
+              ElevatedButton(onPressed: click1, child: const Text("Button"))
             ],
           )
         ],

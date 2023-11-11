@@ -3,34 +3,36 @@ import 'package:flutter/material.dart';
 import 'package:project2/ficard.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: Car_Slider(),
   ));
 }
 
 class Car_Slider extends StatelessWidget {
+  const Car_Slider({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Slider"),
+        title: const Text("Slider"),
       ),
       body: CarouselSlider(items: [
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/img/background.jpg")),
           ),
         ),
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover, image: AssetImage("assets/img/CANADA.jpg")),
           ),
         ),
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/img/USA.jpg")),
@@ -38,7 +40,7 @@ class Car_Slider extends StatelessWidget {
         ),
 
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/img/RUSSIA.jpg")),
@@ -46,7 +48,7 @@ class Car_Slider extends StatelessWidget {
         ),
 
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/img/ENGLAND.jpg")),
@@ -55,10 +57,10 @@ class Car_Slider extends StatelessWidget {
 
         InkWell(
           onTap: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>FiCard()));
+            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const FiCard()));
           },
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage("assets/img/FRANCE.jpg")),
@@ -67,7 +69,7 @@ class Car_Slider extends StatelessWidget {
         ),
         GestureDetector(
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage("assets/img/Mountain.jpg")),
@@ -81,7 +83,7 @@ class Car_Slider extends StatelessWidget {
         enlargeCenterPage: true,
         enableInfiniteScroll: true,
         autoPlayCurve: Curves.fastEaseInToSlowEaseOut,
-        autoPlayAnimationDuration: Duration(seconds: 2)
+        autoPlayAnimationDuration: const Duration(seconds: 2)
 
       )),
     );

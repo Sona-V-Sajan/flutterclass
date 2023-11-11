@@ -18,6 +18,8 @@ class ListView_Builder extends StatelessWidget {
     "assets/img/salad.png"
   ];
 
+  ListView_Builder({super.key});
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -28,8 +30,8 @@ class ListView_Builder extends StatelessWidget {
         children: [
           const ListTile(
             leading: CircleAvatar(
-            child: Icon(Icons.insert_link_outlined),
             backgroundColor: Colors.teal,
+            child: Icon(Icons.insert_link_outlined),
           ),
           title: Text("Create Call Link "),
           subtitle: Text("Share a link"),

@@ -7,6 +7,8 @@ void main(){
 class  SplashPage extends StatelessWidget {
 
   final key1 = GlobalKey<FormState>();
+
+  SplashPage({super.key});
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -29,7 +31,7 @@ class  SplashPage extends StatelessWidget {
                     ){
                   final valid =key1.currentState!.validate();
                   if(valid){
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginPage()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const LoginPage()));
                   }else{
                     ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text('Inavlid data')));
@@ -54,7 +56,7 @@ class  SplashPage extends StatelessWidget {
               child: MaterialButton(minWidth:double.infinity,
                 height:60,onPressed: (){
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context)=>SignUp()));
+                      builder: (context)=>const SignUp()));
 
                 },
                 color: Colors.green,

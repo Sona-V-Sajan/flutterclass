@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   //to run an app
-  runApp(MaterialApp //default theme of our flutter app
+  runApp(const MaterialApp //default theme of our flutter app
       (
     home: SplashPage(//initial page to be launched while running an app
 
@@ -12,6 +12,8 @@ void main() {
 }
 
 class SplashPage extends StatelessWidget {
+  const SplashPage({super.key});
+
   @override
   //to  create our widget tree we use build function
   Widget build(BuildContext context) {

@@ -4,9 +4,11 @@ import 'dart:math' as math;
 
 import 'package:google_fonts/google_fonts.dart';
 void main(){
-  runApp(MaterialApp(home: FiCard(),));
+  runApp(const MaterialApp(home: FiCard(),));
 }
 class FiCard extends StatelessWidget {
+  const FiCard({super.key});
+
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -30,7 +32,7 @@ class FiCard extends StatelessWidget {
                       child: const FaIcon(
                         size:40,
                         FontAwesomeIcons.simCard,color:Colors.grey,)),
-                        SizedBox(width: 8,),
+                        const SizedBox(width: 8,),
 
                   Transform.rotate(angle: 90 * math.pi / 180,
                       child: const FaIcon(

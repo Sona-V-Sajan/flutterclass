@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:project2/listview2.dart';
+import 'package:project2/Listview/listview2.dart';
 import 'package:project2/Listview/listview_constructor.dart';
 import 'package:project2/loginPage.dart';
 import 'package:project2/practice/register.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(const MaterialApp(
     home: CustomizeAppbar(),
     color: Colors.teal,
   ));
 }
 
 class CustomizeAppbar extends StatelessWidget {
+  const CustomizeAppbar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -55,10 +57,10 @@ class CustomizeAppbar extends StatelessWidget {
               )),
         ),
         body: TabBarView(children: [
-          ListView1(),
+          const ListView1(),
           LoginPage(),
           ListView2(),
-          RegistrationPage()
+          const RegistrationPage()
         ]),
       ),
     );

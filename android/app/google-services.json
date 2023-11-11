@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "949109276122",
+    "project_id": "flutter-projet-f1172",
+    "storage_bucket": "flutter-projet-f1172.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949109276122:android:2d3a95ea305c18420114e3",
+        "android_client_info": {
+          "package_name": "com.sona.project2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChWQjbl7EMmzs4aaxi8340ItycVal_MsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

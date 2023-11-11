@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 void main(){
-runApp(MaterialApp(home:ProfileDrawer(),));
+runApp(const MaterialApp(home:ProfileDrawer(),));
 
 }
 
 
 class ProfileDrawer extends StatelessWidget {
+  const ProfileDrawer({super.key});
+
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:project2/practice/statefull_login.dart';
 
 class registration_stateful extends StatefulWidget {
+  const registration_stateful({super.key});
+
  @override
   State<registration_stateful> createState() => registration_statefulState();
 
@@ -15,12 +17,12 @@ class _registration_statefulStae extends State<registration_stateful> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("Registration page"),),
+    return Scaffold(appBar: AppBar(title: const Text("Registration page"),),
       body: Form(
         key: formkey,
         child: Column(children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: TextField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(   hintText:"Name",
@@ -32,7 +34,7 @@ class _registration_statefulStae extends State<registration_stateful> {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: TextFormField(
-              decoration: InputDecoration(border:
+              decoration: const InputDecoration(border:
               OutlineInputBorder(),
                 hintText: "Username",
                 helperText: "Must be an letters",
@@ -41,7 +43,7 @@ class _registration_statefulStae extends State<registration_stateful> {
               ),
               //here uname is value entered a textformfield will stored at uname
               validator: (uname){
-                if(uname!.isEmpty || !uname!.contains("@")|| !uname.contains(".com")){
+                if(uname!.isEmpty || !uname.contains("@")|| !uname.contains(".com")){
                   return "Username must not be empty or invalid";
                 }
                 else{
@@ -66,7 +68,7 @@ class _registration_statefulStae extends State<registration_stateful> {
                   hintText: "Phone Number",
                   labelText: "Phone Number",
                   helperText: "Must be an number",
-                  prefix: Icon(Icons.numbers),
+                  prefix: const Icon(Icons.numbers),
                   border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
 
               ),
@@ -85,7 +87,7 @@ class _registration_statefulStae extends State<registration_stateful> {
                 hintText: "Password",
                 labelText: "Password",
                 helperText: "Must be an special character",
-                prefix: Icon(Icons.password_rounded),
+                prefix: const Icon(Icons.password_rounded),
                 border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
             ),
           ),
@@ -102,20 +104,20 @@ class _registration_statefulStae extends State<registration_stateful> {
                 hintText: "Confirm Password",
                 labelText: "Confirm Password",
                 helperText: "Must be an special character",
-                prefix: Icon(Icons.password_rounded),
+                prefix: const Icon(Icons.password_rounded),
                 border:OutlineInputBorder(borderRadius:BorderRadius.circular(15.0))
             ),
           ),
           ElevatedButton(onPressed: (){
             final valid=formkey.currentState!.validate();
             if(valid){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=> Login_state()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const Login_state()));
             }
             else{
               ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text("Invalid data")));
             }
-          }, child: Text("Register"))
+          }, child: const Text("Register"))
         ],),
       ),
     );

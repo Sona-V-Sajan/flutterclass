@@ -5,6 +5,8 @@ import 'package:project2/statefullogin.dart';
 //   runApp(MaterialApp(home: Reg_stateful(),));
 // }
 class Reg_stateful extends StatefulWidget {
+  const Reg_stateful({super.key});
+
   @override
   State<Reg_stateful> createState() => _Reg_statefulState();
 }
@@ -78,7 +80,7 @@ class _Reg_statefulState extends State<Reg_stateful> {
                     }
                   },
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: const OutlineInputBorder(),
                       hintText: 'Password',
                   suffixIcon: IconButton(onPressed: (){
                     setState(() {
@@ -98,7 +100,7 @@ class _Reg_statefulState extends State<Reg_stateful> {
               ),),
 
               Padding(
-                padding:  EdgeInsets.all(10.0),
+                padding:  const EdgeInsets.all(10.0),
                 child: TextFormField(
                   obscuringCharacter: "*",
                   obscureText: cpasswordhidden,
@@ -110,7 +112,7 @@ class _Reg_statefulState extends State<Reg_stateful> {
                     }
                   },
                   decoration:  InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: const OutlineInputBorder(),
                       hintText: 'Password',
                     suffixIcon: IconButton(onPressed: (){
                       setState(() {
@@ -133,13 +135,13 @@ class _Reg_statefulState extends State<Reg_stateful> {
                 final valid = formkey.currentState!.validate();
                 if(valid){
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context)=>Login_stateful()));
+                      builder: (context)=>const Login_stateful()));
                 }else{
                   ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text('Inavlid datas'))
                   );
                 }
-              }, child: Text("Login"))
+              }, child: const Text("Login"))
             ],
           ),
         ),

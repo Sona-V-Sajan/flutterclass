@@ -14,6 +14,8 @@ class GridView1 extends StatelessWidget {
   ];
   var text = ["USA", "LONDON", "ENGLAND", "RUSSIA", "CANADA"];
 
+  GridView1({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(
