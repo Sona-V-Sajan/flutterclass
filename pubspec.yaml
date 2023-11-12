@@ -46,6 +46,8 @@ dependencies:
   google_maps_flutter: ^2.5.0
   shared_preferences: ^2.2.2
   sqflite: ^2.3.0
+  #hive type adapter
+  #hive-flutter
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   permission_handler: ^11.0.1
@@ -53,14 +55,16 @@ dependencies:
   get: ^4.6.6
   email_validator: ^2.1.17
 
+  #dependencie for firebase email and password
+  firebase_core: ^2.22.0
+  firebase_auth: ^4.13.0
 
 
 
 
 
-  #hive type adapter
-  #hive:
-  #hive-flutter
+
+
 
 
   # The following adds the Cupertino Icons font to your application.
