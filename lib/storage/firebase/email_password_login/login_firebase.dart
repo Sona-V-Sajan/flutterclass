@@ -9,13 +9,14 @@ void main()async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     //if you have no oauth client details thn manually addd his value to goolesrvicce.json file file
-    // options:FirebaseOptions(
-    //     apiKey: "AIzaSyChWQjbl7EMmzs4aaxi8340ItycVal_MsQ",//current_key
-    //     appId: "1:949109276122:android:2d3a95ea305c18420114e3",//mobilesdk_app_id
-    //     messagingSenderId: '',//null
-    //     projectId: "flutter-projet-f1172")//project_id
+    options:FirebaseOptions(
+        apiKey: "AIzaSyChWQjbl7EMmzs4aaxi8340ItycVal_MsQ",//current_key
+        appId: "1:949109276122:android:2d3a95ea305c18420114e3",//mobilesdk_app_id
+        messagingSenderId: '',//null
+        projectId: "flutter-projet-f1172"
+    )//project_id
   );
-  //these both usd in
+  //these both used in
   User? user =FirebaseAuth.instance.currentUser;
   runApp(
       MaterialApp(home: user == null? Login_Firebase():Home_Firbase(),

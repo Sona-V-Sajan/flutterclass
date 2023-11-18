@@ -59,6 +59,14 @@ dependencies:
   firebase_core: ^2.22.0
   firebase_auth: ^4.13.0
 
+  #for firbase storage
+  #firbase core
+  firebase_storage: ^11.5.0
+  path: ^1.8.3
+
+
+
+
 
 
 

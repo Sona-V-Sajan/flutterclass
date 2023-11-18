@@ -12,7 +12,20 @@
           "package_name": "com.sona.project2"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "949109276122-da5g2ofrj21cur6713alc8s8hrnlfj0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sona.project2",
+            "certificate_hash": "8223c19f5406643b10cb36a865a3e8babdb4f96e"
+          }
+        },
+        {
+          "client_id": "949109276122-gj1iki1m2nlmghiik8p6vcjlpj60cvlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyChWQjbl7EMmzs4aaxi8340ItycVal_MsQ"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949109276122-gj1iki1m2nlmghiik8p6vcjlpj60cvlc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
