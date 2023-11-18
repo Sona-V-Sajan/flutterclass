@@ -118,18 +118,18 @@ class Farmr_Homepage extends StatelessWidget {
             //Respond to item press.
           },
           items: [
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage(
                     "assets/img/farmerzone/farmers_fresh_zone_logo_small_green.png")),
                 label: "Home"),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_cart_outlined,
                 color: Colors.grey,
               ),
               label: "Cart",
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(
                   Icons.account_box_outlined,
                   color: Colors.grey,
@@ -220,17 +220,17 @@ class Farmr_Homepage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Padding(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                             right: 8, top: 8, bottom: 8, left: 2),
                         child: MaterialButton(
                           onPressed: () {},
                           child: Text(
                             text[index],
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.green,
                             ),
                           ),
-                          color: Color(0XFFFCDE7CA),
+                          color: const Color(0XFFFCDE7CA),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(80),
                           ),
@@ -248,7 +248,7 @@ class Farmr_Homepage extends StatelessWidget {
                     items: [
                       Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
                                 "assets/img/farmerzone/slider-4.jpeg"),
@@ -258,7 +258,7 @@ class Farmr_Homepage extends StatelessWidget {
                       ),
                       Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
                                 "assets/img/farmerzone/slider-2.jpeg"),
@@ -268,7 +268,7 @@ class Farmr_Homepage extends StatelessWidget {
                       ),
                       Container(
                         width: double.infinity,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
                                 "assets/img/farmerzone/slider-3.jpeg"),
@@ -280,7 +280,7 @@ class Farmr_Homepage extends StatelessWidget {
                     options: CarouselOptions(
                       viewportFraction: 1,
                       autoPlay: true,
-                      autoPlayAnimationDuration: Duration(seconds: 2),
+                      autoPlayAnimationDuration: const Duration(seconds: 2),
                     ),
                   ),
                 ),
@@ -295,7 +295,8 @@ class Farmr_Homepage extends StatelessWidget {
                   decoration: BoxDecoration(
                       shape: BoxShape.rectangle,
                       color: Colors.white,
-                      border: Border.all(color: Color(0XFFFCDE7CA), width: 2)),
+                      border: Border.all(
+                          color: const Color(0XFFFCDE7CA), width: 2)),
                   child: Row(
                     children: [
                       Padding(
@@ -307,7 +308,7 @@ class Farmr_Homepage extends StatelessWidget {
                               height: 20,
                               width: 30,
                             ),
-                            Text(
+                            const Text(
                               "30 MIN POLICY",
                               style:
                                   TextStyle(color: Colors.grey, fontSize: 12),
@@ -325,7 +326,7 @@ class Farmr_Homepage extends StatelessWidget {
                               height: 20,
                               width: 30,
                             ),
-                            Text("TRACEBILITY",
+                            const Text("TRACEBILITY",
                                 style:
                                     TextStyle(color: Colors.grey, fontSize: 12))
                           ],
@@ -341,10 +342,10 @@ class Farmr_Homepage extends StatelessWidget {
                               height: 20,
                               width: 30,
                             ),
-                            Text("LOCAL",
+                            const Text("LOCAL",
                                 style: TextStyle(
                                     color: Colors.grey, fontSize: 12)),
-                            Text("SOURCING",
+                            const Text("SOURCING",
                                 style:
                                     TextStyle(color: Colors.grey, fontSize: 12))
                           ],
@@ -355,9 +356,9 @@ class Farmr_Homepage extends StatelessWidget {
                 ),
               ),
             ),
-            SliverToBoxAdapter(
+            const SliverToBoxAdapter(
               child: Padding(
-                padding: const EdgeInsets.only(left: 8.0, bottom: 10),
+                padding: EdgeInsets.only(left: 8.0, bottom: 10),
                 child: Text(
                   "Shop By category",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -365,7 +366,7 @@ class Farmr_Homepage extends StatelessWidget {
               ),
             ),
             SliverGrid(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3, // Adjust the number of columns as needed
                 crossAxisSpacing: 5.0, // Adjust the spacing between columns
                 mainAxisSpacing: 5.0, // Adjust the spacing between rows
@@ -376,7 +377,7 @@ class Farmr_Homepage extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
@@ -392,7 +393,7 @@ class Farmr_Homepage extends StatelessWidget {
                           children: [
                             ClipRRect(
                                 borderRadius:
-                                    BorderRadius.all(Radius.circular(10)),
+                                    const BorderRadius.all(Radius.circular(10)),
                                 child: Image(
                                   image: AssetImage(img[index]),
                                   height: 80,
@@ -403,7 +404,7 @@ class Farmr_Homepage extends StatelessWidget {
                               padding: const EdgeInsets.only(bottom: 5, top: 8),
                               child: Text(
                                 txt[index],
-                                style: TextStyle(),
+                                style: const TextStyle(),
                               ),
                             ),
                           ],
@@ -425,7 +426,7 @@ class Farmr_Homepage extends StatelessWidget {
                   ),
                   Container(
                     height: 200,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         image: DecorationImage(
                             image:
                                 AssetImage("assets/img/farmerzone/img1.jpeg"))),
@@ -433,13 +434,13 @@ class Farmr_Homepage extends StatelessWidget {
                 ],
               ),
             ),
-            SliverToBoxAdapter(
+            const SliverToBoxAdapter(
               child: Column(
                 children: [
                   Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 8, bottom: 10),
+                        padding: EdgeInsets.only(left: 8, bottom: 10),
                         child: Text(
                           "Best Selling Products",
                           style: TextStyle(
@@ -450,7 +451,7 @@ class Farmr_Homepage extends StatelessWidget {
               ),
             ),
             SliverGrid(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisExtent: 250,
               ),
@@ -469,10 +470,10 @@ class Farmr_Homepage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: MaterialButton(
                   onPressed: () {},
-                  color: Color(0xFF2DB457),
+                  color: const Color(0xFF2DB457),
                   height: 35,
                   minWidth: double.infinity,
-                  child: Text(
+                  child: const Text(
                     "View More",
                     style: TextStyle(
                         color: Colors.white,
@@ -492,7 +493,7 @@ class Farmr_Homepage extends StatelessWidget {
                 ),
                 Container(
                   width: double.infinity,
-                  child: Image(
+                  child: const Image(
                       image:
                           AssetImage("assets/img/farmerzone/certificate.jpeg")),
                 ),
@@ -501,8 +502,8 @@ class Farmr_Homepage extends StatelessWidget {
                   height: 5,
                   color: Colors.grey[200],
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
@@ -536,7 +537,7 @@ class Farmr_Homepage extends StatelessWidget {
                       padding: const EdgeInsets.only(top: 1.0),
                       child: TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "View More",
                           style: TextStyle(
                               color: Color(0xFF2DB457),
@@ -549,60 +550,69 @@ class Farmr_Homepage extends StatelessWidget {
                     height: 5,
                     color: Colors.grey[200],
                   ),
-                  Align(
+                  const Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 8, bottom: 10),
+                        padding: EdgeInsets.only(left: 8, bottom: 10),
                         child: Text(
                           "What Our Cutomr Say?",
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                       )),
-
                 ],
               ),
             ),
-            SliverList(delegate: SliverChildListDelegate([
-
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    border:Border.all(color:Color(0XFFFE9E9E9))
-                  ),
-                  child: CarouselSlider(
-                    items: [
-                      Customer_Review(
-                        img: AssetImage("assets/img/farmerzone/customer Prince.jpg"),
-                        name: "Prince", subtitle: "Online Digital Marketing Business",icons:Icons.notes,
-                        des: """I am a regular customer of Farmers Fresh Zone & needless to say, I am extremely satisfied with their service & service quality! The deliveries are quick, products are fresh & I save by ordering online. The best part is, I get all of this at a really  reasonable price!""",
+            SliverList(
+              delegate: SliverChildListDelegate([
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: const Color(0XFFFE9E9E9))),
+                    child: CarouselSlider(
+                      items: [
+                        Customer_Review(
+                          img: const AssetImage(
+                              "assets/img/farmerzone/customer Prince.jpg"),
+                          name: "Prince",
+                          subtitle: "Online Digital Marketing Business",
+                          icons: Icons.notes,
+                          des:
+                              """I am a regular customer of Farmers Fresh Zone & needless to say, I am extremely satisfied with their service & service quality! The deliveries are quick, products are fresh & I save by ordering online. The best part is, I get all of this at a really  reasonable price!""",
+                        ),
+                        Customer_Review(
+                          img: const AssetImage(
+                              "assets/img/farmerzone/customerNeethu.jpg"),
+                          name: "Neethu Vipin",
+                          subtitle: "Clerk NavalBase Kochi",
+                          icons: Icons.notes,
+                          des:
+                              """I am a regular customer of Farmers Fresh Zone & needless to say, I am extremely satisfied with their service & service quality! The deliveries are quick, products are fresh & I save by ordering online. The best part is, I get all of this at a really  reasonable price!""",
+                        ),
+                        Customer_Review(
+                          img: const AssetImage(
+                              "assets/img/farmerzone/cutomer-2.jpg"),
+                          name: "Hrishikesh Nair",
+                          subtitle: "CEO Infopark",
+                          icons: Icons.notes,
+                          des:
+                              """I am a regular customer of Farmers Fresh Zone & needless to say, I am extremely satisfied with their service & service quality! The deliveries are quick, products are fresh & I save by ordering online. The best part is, I get all of this at a really  reasonable price!""",
+                        ),
+                      ],
+                      options: CarouselOptions(
+                        viewportFraction: 1,
+                        autoPlay: true,
+                        autoPlayAnimationDuration: const Duration(seconds: 2),
                       ),
-                      Customer_Review(
-                        img: AssetImage("assets/img/farmerzone/customerNeethu.jpg"),
-                        name: "Neethu Vipin", subtitle: "Clerk NavalBase Kochi",icons:Icons.notes,
-                        des: """I am a regular customer of Farmers Fresh Zone & needless to say, I am extremely satisfied with their service & service quality! The deliveries are quick, products are fresh & I save by ordering online. The best part is, I get all of this at a really  reasonable price!""",
-                      ),
-                      Customer_Review(
-                        img: AssetImage("assets/img/farmerzone/cutomer-2.jpg"),
-                        name: "Hrishikesh Nair", subtitle: "CEO Infopark",icons:Icons.notes,
-                        des: """I am a regular customer of Farmers Fresh Zone & needless to say, I am extremely satisfied with their service & service quality! The deliveries are quick, products are fresh & I save by ordering online. The best part is, I get all of this at a really  reasonable price!""",
-                      ),
-                    ],
-                    options: CarouselOptions(
-                      viewportFraction: 1,
-                      autoPlay: true,
-                      autoPlayAnimationDuration: Duration(seconds: 2),
                     ),
-
                   ),
                 ),
-
-              ),
-            ]),),
+              ]),
+            ),
 
             SliverToBoxAdapter(
-              child:Column(
+              child: Column(
                 children: [
                   Container(
                     width: double.infinity,
@@ -614,34 +624,50 @@ class Farmr_Homepage extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text("This Kochi-based farm-to-fork online "
-                              "marketplace is connecting farmers directly "
-                              "to customers.", textAlign:TextAlign.center,
+                          child: Text(
+                            "This Kochi-based farm-to-fork online "
+                            "marketplace is connecting farmers directly "
+                            "to customers.",
+                            textAlign: TextAlign.center,
                             style: GoogleFonts.roboto(
-                              fontSize: 16,fontWeight:FontWeight.normal,
-                              color:Colors.black,),
+                              fontSize: 16,
+                              fontWeight: FontWeight.normal,
+                              color: Colors.black,
+                            ),
                           ),
                         ),
                         Row(
-                          crossAxisAlignment:CrossAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/img/farmerzone/news_1.png",height:45,width: 85),
+                              child: Image.asset(
+                                  "assets/img/farmerzone/news_1.png",
+                                  height: 45,
+                                  width: 85),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/img/farmerzone/news_2.png",height:38,width: 80),
+                              child: Image.asset(
+                                  "assets/img/farmerzone/news_2.png",
+                                  height: 38,
+                                  width: 80),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/img/farmerzone/news_3.png",height:40,width: 80,),
+                              child: Image.asset(
+                                "assets/img/farmerzone/news_3.png",
+                                height: 40,
+                                width: 80,
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Image.asset("assets/img/farmerzone/news_4.png",height:40,width: 80),
+                              child: Image.asset(
+                                  "assets/img/farmerzone/news_4.png",
+                                  height: 40,
+                                  width: 80),
                             ),
-
                           ],
                         ),
                         Container(
@@ -649,8 +675,8 @@ class Farmr_Homepage extends StatelessWidget {
                           height: 10,
                           color: Colors.grey[200],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
                           child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
@@ -663,10 +689,14 @@ class Farmr_Homepage extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: Align(
                               alignment: Alignment.centerLeft,
-                              child: Text("About Us  |  Our Farmers  | Blog ",style:TextStyle(color: Colors.grey[600],fontSize: 15),)),
+                              child: Text(
+                                "About Us  |  Our Farmers  | Blog ",
+                                style: TextStyle(
+                                    color: Colors.grey[600], fontSize: 15),
+                              )),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
                           child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
@@ -679,27 +709,43 @@ class Farmr_Homepage extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: Align(
                               alignment: Alignment.centerLeft,
-                              child: Text("Privacy Policy |  Return &Refund Policy | \nTerms & Condition",style:TextStyle(color: Colors.grey[600],fontSize: 15),)),
+                              child: Text(
+                                "Privacy Policy |  Return &Refund Policy | \nTerms & Condition",
+                                style: TextStyle(
+                                    color: Colors.grey[600], fontSize: 15),
+                              )),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 80.0),
+                        const Padding(
+                          padding: EdgeInsets.only(left: 80.0),
                           child: Row(
                             children: [
-                             Padding(
-                               padding: const EdgeInsets.all(10.0),
-                               child: FaIcon(FontAwesomeIcons.twitter,color: Colors.grey,),
-                             ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 50.0),
-                                child: FaIcon(FontAwesomeIcons.youtube,color: Colors.grey,),
+                                padding: EdgeInsets.all(10.0),
+                                child: FaIcon(
+                                  FontAwesomeIcons.twitter,
+                                  color: Colors.grey,
+                                ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 50.0),
-                                child: FaIcon(FontAwesomeIcons.facebookF,color: Colors.grey,),
+                                padding: EdgeInsets.only(left: 50.0),
+                                child: FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  color: Colors.grey,
+                                ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 50.0),
-                                child: FaIcon(FontAwesomeIcons.instagram,color: Colors.grey,),
+                                padding: EdgeInsets.only(left: 50.0),
+                                child: FaIcon(
+                                  FontAwesomeIcons.facebookF,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(left: 50.0),
+                                child: FaIcon(
+                                  FontAwesomeIcons.instagram,
+                                  color: Colors.grey,
+                                ),
                               ),
                             ],
                           ),
@@ -707,21 +753,21 @@ class Farmr_Homepage extends StatelessWidget {
                         Container(
                           width: double.infinity,
                           height: 80,
-                          color: Color(0xFF2DB457),
+                          color: const Color(0xFF2DB457),
                           child: Center(
-                            child: Text("Copyright © 2023 Farmers Fresh Zone .\n"
-                                "   All Rights Reserved.V 2.40.51", textAlign:TextAlign.center,
+                            child: Text(
+                              "Copyright © 2023 Farmers Fresh Zone .\n"
+                              "   All Rights Reserved.V 2.40.51",
+                              textAlign: TextAlign.center,
                               style: GoogleFonts.roboto(
-                                fontSize: 16,fontWeight:FontWeight.normal,
-                                color:Colors.white,),
+                                fontSize: 16,
+                                fontWeight: FontWeight.normal,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
-
-
-
-
-                    ],
+                      ],
                     ),
                   )
                 ],
