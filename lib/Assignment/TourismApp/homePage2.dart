@@ -167,7 +167,7 @@ class TourismHome extends StatelessWidget {
             padding:
             const EdgeInsets.only(bottom: 5, right: 10, left: 10, top: 20),
             child: MaterialButton(
-              minWidth: 400,
+              minWidth: 500,
               height: 50,
               onPressed: () {},
               color: const Color(0xFF27285C),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project2/Assignment/TourismApp/login.dart';
+import 'package:project2/Assignment/TourismApp/registration.dart';
 
 class Login_Tourism extends StatelessWidget {
   const Login_Tourism({super.key});
@@ -17,7 +19,9 @@ class Login_Tourism extends StatelessWidget {
           SizedBox(
             height: 40,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>Login_page()));
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue[700],
                   textStyle: const TextStyle(
@@ -35,7 +39,9 @@ class Login_Tourism extends StatelessWidget {
             child: MaterialButton(
               minWidth: 160,
               height: 60,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Register_page()));
+              },
               color: Colors.blue,
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(40))),
@@ -53,7 +59,7 @@ class Login_Tourism extends StatelessWidget {
                       width: 10,
                     ),
                     Icon(
-                      Icons.app_registration,
+                      Icons.person,
                       color: Colors.white,
                     )
                   ],
@@ -121,7 +127,7 @@ class Login_Tourism extends StatelessWidget {
                       width: 10,
                     ),
                     Icon(
-                      Icons.transfer_within_a_station,
+                      Icons.g_mobiledata_outlined,
                       color: Colors.white,
                     )
                   ],

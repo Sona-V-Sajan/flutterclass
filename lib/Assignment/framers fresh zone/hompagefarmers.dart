@@ -700,7 +700,7 @@ class Farmr_Homepage extends StatelessWidget {
                           child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                "UseeFul Links",
+                                "UseFul Links",
                                 style: TextStyle(
                                     fontSize: 15, fontWeight: FontWeight.bold),
                               )),

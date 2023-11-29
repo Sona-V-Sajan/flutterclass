@@ -86,8 +86,7 @@ class _Login_SharedState extends State<Login_Shared> {
 
   void validateandLogin() async {
     preferences = await SharedPreferences.getInstance();
-    String storedusername =
-        preferences.getString("uname")!; //uname is a key of registration
+    String storedusername = preferences.getString("uname")!; //uname is a key of registration
     String storedpassword = preferences.getString("pass")!;
 
     String usrname = username.text.trim();
