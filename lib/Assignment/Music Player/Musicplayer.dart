@@ -152,7 +152,6 @@ class MusicPlayer extends StatelessWidget {
                                 children: [
                                   Text("Hero",style: TextStyle(
                                     color: Color(0xfffe4b8ae),
-                                    fontSize: 15,
                                     fontWeight: FontWeight.bold,
 
                                   ),),
@@ -188,7 +187,6 @@ class MusicPlayer extends StatelessWidget {
                               children: [
                                 Text("Unholy",style: TextStyle(
                                   color: Color(0xfffe4b8ae),
-                                  fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
@@ -196,10 +194,10 @@ class MusicPlayer extends StatelessWidget {
                               ],
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 30),
-                            child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xfffe4b8ae)),
-                          ),
+                          // const Padding(
+                          //   padding: EdgeInsets.only(left: 30),
+                          //   child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xfffe4b8ae)),
+                          // ),
                           const Icon(Icons.download, size: 30, color: Color(0xfffe4b8ae)),
 
                         ],
@@ -223,7 +221,6 @@ class MusicPlayer extends StatelessWidget {
                               children: [
                                 Text("Lift Me UP",style: TextStyle(
                                   color: Color(0xfffe4b8ae),
-                                  fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
@@ -258,7 +255,6 @@ class MusicPlayer extends StatelessWidget {
                               children: [
                                 Text("Depression",style: TextStyle(
                                   color: Color(0xfffe4b8ae),
-                                  fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),
@@ -270,7 +266,7 @@ class MusicPlayer extends StatelessWidget {
                             padding: EdgeInsets.only(left: 30),
                             child: Icon(Icons.star_border_outlined, size: 30, color: Color(0xfffe4b8ae)),
                           ),
-                          const Icon(Icons.download, size: 30, color: Color(0xfffe4b8ae)),
+                          Icon(Icons.download, size: 30, color: Color(0xfffe4b8ae)),
 
                         ],
                       ),
@@ -294,7 +290,6 @@ class MusicPlayer extends StatelessWidget {
                               children: [
                                 Text("Depression",style: TextStyle(
                                   color: Color(0xfffe4b8ae),
-                                  fontSize: 15,
                                   fontWeight: FontWeight.bold,
 
                                 ),),

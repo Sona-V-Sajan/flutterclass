@@ -25,14 +25,14 @@ class Box_Container extends StatelessWidget {
                   color: Colors.white,
                   border: Border.all(color: Color(0XFFFE9E9E9),width: 3),
               ),
-              width:180,
+              width:200,
               height: 250,
               child: Column(
                 children: [
                   Image(image: img!,height:140,fit: BoxFit.cover,width: 400,),
                   Padding(
                     padding: const EdgeInsets.only(left: 2.0,top: 8,bottom: 8),
-                    child: Text(des!,style:TextStyle(fontWeight: FontWeight.normal,fontSize: 20 ,),),
+                    child: Text(des!,style:TextStyle(fontWeight: FontWeight.normal,fontSize: 15 ,),),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),

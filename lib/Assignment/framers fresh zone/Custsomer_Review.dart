@@ -41,7 +41,7 @@ class Customer_Review extends StatelessWidget {
               child: Image(image: img!,fit:BoxFit.cover,),
             ),
             title: Text(name!,style: GoogleFonts.roboto(color: Color(0xFF2DB457),fontSize: 20,fontWeight: FontWeight.bold),),
-            subtitle: Text(subtitle!,style: TextStyle(color: Colors.grey[750],fontSize: 14),),
+            subtitle: Text(subtitle!,style: TextStyle(color: Colors.grey[750],fontSize: 15),),
             trailing:Icon(icons!),
           ),
 

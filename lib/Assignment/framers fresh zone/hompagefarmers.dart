@@ -5,13 +5,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:project2/Assignment/framers%20fresh%20zone/Custsomer_Review.dart';
 import 'package:project2/Assignment/framers%20fresh%20zone/box_refactor.dart';
 import 'package:project2/Assignment/framers%20fresh%20zone/vegetables_refactor.dart';
-
-void main() {
+void main(){
   runApp(MaterialApp(
     home: Farmr_Homepage(),
   ));
 }
-
 class Farmr_Homepage extends StatelessWidget {
   var text = [
     "OFFERS",
@@ -77,11 +75,11 @@ class Farmr_Homepage extends StatelessWidget {
     "Yellow Cucumber"
   ];
   var offer = [
-    "11%",
+    "",
     "",
     "8%",
     "5%",
-    "14%",
+    "",
     "",
     "",
     "7%",
@@ -290,7 +288,7 @@ class Farmr_Homepage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
-                  height: 70,
+                  height: 80,
                   width: 700,
                   decoration: BoxDecoration(
                       shape: BoxShape.rectangle,
